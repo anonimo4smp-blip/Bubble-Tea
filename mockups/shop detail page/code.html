@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mochi Matcha Atelier - Bubble Tea España</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ffb4a9",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#8fb339",
+              "on-surface": "#1f1b14",
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#f1e7dc",
+              "surface": "#fff8f3",
+              "on-secondary-fixed": "#331200",
+              "on-primary-container": "#304200",
+              "on-surface-variant": "#444938",
+              "secondary-container": "#feb289",
+              "on-error": "#ffffff",
+              "surface-container-low": "#fcf2e7",
+              "error-container": "#ffdad6",
+              "secondary-fixed": "#ffdbca",
+              "inverse-surface": "#353028",
+              "background": "#fff8f3",
+              "on-secondary-container": "#794222",
+              "surface-variant": "#ebe1d6",
+              "secondary-fixed-dim": "#ffb68f",
+              "outline-variant": "#c5c9b3",
+              "surface-bright": "#fff8f3",
+              "on-tertiary-fixed": "#410001",
+              "surface-container-highest": "#ebe1d6",
+              "on-secondary-fixed-variant": "#6d3919",
+              "tertiary": "#af2f25",
+              "inverse-on-surface": "#f9efe4",
+              "on-primary-fixed-variant": "#394d00",
+              "on-background": "#1f1b14",
+              "tertiary-fixed": "#ffdad5",
+              "primary": "#4c6700",
+              "secondary": "#89502e",
+              "on-tertiary-fixed-variant": "#8d1510",
+              "outline": "#757966",
+              "surface-tint": "#4c6700",
+              "inverse-primary": "#aed456",
+              "primary-fixed": "#c9f16f",
+              "surface-container": "#f6ece1",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#aed456",
+              "on-primary-fixed": "#151f00",
+              "tertiary-container": "#ff8272",
+              "surface-dim": "#e2d9ce",
+              "on-tertiary-container": "#7d0706"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .glass-nav {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation (Shared Component) -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-full px-6 py-3 flex justify-between items-center z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_20px_50px_rgba(31,27,20,0.05)]">
+<div class="text-2xl font-headline italic text-lime-900 dark:text-lime-50 tracking-tight">Bubble Tea España</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-500 dark:text-stone-400 hover:text-lime-800 transition-all duration-300 font-label tracking-widest uppercase text-xs" href="#">Explorar ciudades</a>
+<a class="text-lime-700 dark:text-lime-300 font-bold border-b-2 border-lime-700 font-label tracking-widest uppercase text-xs" href="#">Rankings</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-lime-800 transition-all duration-300 font-label tracking-widest uppercase text-xs" href="#">Sobre nosotros</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label text-xs tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all duration-200">
+            Únete al club
+        </button>
+</nav>
+<!-- Hero / Header Section -->
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="bg-primary-fixed text-on-primary-fixed px-4 py-1 rounded-full font-label text-xs font-bold tracking-widest uppercase">#1 en Madrid</span>
+<span class="text-outline font-label text-sm tracking-wide uppercase">Malasaña • €€</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline text-on-surface leading-tight -tracking-widest">
+                    Mochi Matcha <br/>
+<span class="italic font-normal opacity-80 text-primary">Atelier</span>
+</h1>
+</div>
+<div class="flex gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-semibold hover:opacity-90 active:scale-95 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">map</span>
+                    Cómo llegar
+                </button>
+<button class="bg-surface-container-lowest text-on-surface px-8 py-4 rounded-full font-semibold border border-outline-variant hover:bg-surface-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">camera</span>
+                    Síguenos
+                </button>
+</div>
+</div>
+<!-- Editorial Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<!-- Left Column: Content & Details -->
+<div class="lg:col-span-7 space-y-20">
+<!-- Editorial Summary -->
+<section class="relative">
+<div class="absolute -top-12 -left-12 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<p class="text-2xl md:text-3xl font-headline leading-relaxed text-on-surface-variant">
+                        Mochi Matcha Atelier redefine la experiencia del té en Madrid. Con un enfoque artesanal que roza lo devocional, este rincón en Malasaña traslada la serenidad de los templos de Kioto al corazón de la ciudad. Su matcha, seleccionado meticulosamente de grado ceremonial, es el alma de cada creación.
+                    </p>
+</section>
+<!-- Featured Highlight -->
+<div class="bg-surface-container-low p-10 rounded-xl relative overflow-hidden">
+<div class="relative z-10 space-y-6">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-primary font-bold">Nuestra Recomendación</span>
+<h3 class="text-3xl font-headline text-on-surface">Iced Matcha con perlas de tapioca de miel y un mochi de fresa fresca.</h3>
+<p class="text-on-surface-variant leading-relaxed opacity-80">Un equilibrio perfecto entre el amargor terroso del matcha Uji y el dulzor orgánico de la miel artesanal.</p>
+</div>
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+</div>
+<!-- Why it stands out -->
+<section class="space-y-10">
+<h4 class="font-headline text-2xl border-b border-outline-variant/30 pb-4">Por qué destaca</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Matcha de grado ceremonial</p>
+<p class="text-sm text-on-surface-variant">Importado directamente de pequeñas granjas en Uji, Japón.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Mochi hechos a mano</p>
+<p class="text-sm text-on-surface-variant">Elaborados cada mañana con harina de arroz glutinoso de primera calidad.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">spa</span>
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Espacio zen</p>
+<p class="text-sm text-on-surface-variant">Diseño minimalista pensado para la desconexión y el disfrute consciente.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Cuidado artesanal</p>
+<p class="text-sm text-on-surface-variant">Cada bebida se prepara siguiendo rituales tradicionales japoneses.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sidebar Info & Images -->
+<div class="lg:col-span-5 space-y-12">
+<!-- Main Image - Editorial Style -->
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-xl rotate-1">
+<img alt="Mochi Matcha Drink" class="w-full h-full object-cover" data-alt="vibrant green iced matcha latte with dark tapioca pearls in a minimalist glass cup against a warm neutral stone background with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS9b6AB-eziTCLNEjfFFc1KMj1gwhdGUkvlajLiFRuunV1-x0pB2eAJxNukzrLLVgUe2lXbadP5PEoGxrB-Od0ftuK9lRcmMPtEx369rJiNQt0U-vXnAfDM6MtRZwyvJ-OaBqxfVPG9GSLNHjEdOolMgVP9HYDfjJ1N6y_bb8w0lvRQUzUMU5Y05iXwWkH0K4HnqZR4rjrU4yMgKMdTu3GWPNCJSVWz8RQZkH_7CV5DYgDEqaWe_RNnOUYXn_Aa5rmqJrz93PNT1iD"/>
+</div>
+<!-- Info Cards -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm space-y-8">
+<div>
+<h5 class="font-label text-xs tracking-widest uppercase text-outline mb-4">Horarios de Apertura</h5>
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span>Lunes - Viernes</span>
+<span class="font-bold">10:00 - 20:00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span>Sábado - Domingo</span>
+<span class="font-bold">11:00 - 21:00</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-lg text-xs font-medium">Vegano</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-lg text-xs font-medium">Para estudiar</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-lg text-xs font-medium">Pet friendly</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Asymmetric Image Gallery Section -->
+<section class="mt-32 space-y-12">
+<h2 class="text-4xl font-headline italic">Momentos en el Atelier</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+<div class="col-span-2 row-span-2 aspect-square rounded-xl overflow-hidden">
+<img alt="Shop Interior" class="w-full h-full object-cover" data-alt="interior of a modern japanese tea shop with light wood furniture, minimalist decor, and large windows with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmAD5Vp12xx1qMwA510AumHSAL80d-8ejExP2i9PaW3hlHGMcHSprx7wvL1YGB6l0RP5MAXcAtBq_uS2Kg-8YCQ6rD7PdyPMP5_5ZCdbqYiloWcJ7VrUDehIoSSAOwdOJ5AWug2cDUP7rKN_jwPXTy5vFJKcJsrdflSCEGH6V6ea3uOY6gEaZttw-fVLx7Uq9rC0K8hCSgbSgoYyRED35iNdYaP3MCdlFnIP3Gi0WBMcAtawbgeoCySLUhwwRJliC8pgXAbj2DAZ-P"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden md:mt-12">
+<img alt="Mochi Close-up" class="w-full h-full object-cover" data-alt="close-up of delicate artisanal mochi with fresh strawberry on top served on a black stone plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdVqyGb0CRXj3cXq7icC0WZqlgxJS7a0e-85-Z4wBrMXYI9x67paG_GWlYrAUIWactxTTxWtZhmJJ3fbba0brj3LxIlAKZCU2MavNVqxE9qzXzfFoZaRCoAijUY627LfSkU0Qst6GfFebZDSkR529szJcAhxNyYEgLF0VyU8SO2HwJ6rGI9JT3d8my5JJoObvLYSL9JBRfttRkkV7F6UxJNpNkWSkjmFm9c4TT2syz0pMYmeewuA9o8LNX3uKjnEx5ALBBZCw4XBEx"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden">
+<img alt="Whisking Matcha" class="w-full h-full object-cover" data-alt="top view of ceremonial matcha being whisked in a ceramic bowl with a traditional bamboo chasen whisk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSGnNkyGh9aM0Kdz7zn3iLRtRJG3dvbCR6-PqDh0a99bI97x3r8DWbloCk8EnJ2ceKskuuUgYq2oQF2DH0tplrkAM-dGTysUnS4EsTgqyC_j5G3uVMWk9XDy32lVa01r1HehXUrqQnY5xVBk9Sw0uLf8CQswuKkb14FOU-rMJ4VhX-7eMyklezo9CoTuT6M2916_Kaava3kHnGURgLlwJhZZphJY8sbextrGp7Nhb7DojbKzHpil1v1NCqvqmLo50vC1poeZsRAzKl"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden md:-mt-12">
+<img alt="Matcha Latte Art" class="w-full h-full object-cover" data-alt="latte art of a leaf on a green matcha latte in a white ceramic mug with natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7SH17-v6QJPgO9UwGSs71r1gfmAbpZaWvNcX6-yLElw8O5aBv8v4RnKTZnwN6VjS9vQh8AW3CAHwwFjl5gDs7doCGtPfeX_cKLK5UU3_UHSisy7DqpenXVwRc2MG1FRfZoPNwsz5NnNPIAhYa9kR0hsmxfrpWbDpX3xsH2v-HC9qIbt86-wCzIOV2kVzBXNSJg6ZTqbk8MWOxHxqBJ3A-GmSXWhXbCkIqH5eV2HUb5EYDx8qfSHobMTaUgXEebv_0_inNr18_HzEJ"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden">
+<img alt="Detail Decor" class="w-full h-full object-cover" data-alt="minimalist aesthetic detail of the tea shop with a small zen rock garden and light oak wood textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMVrJloPxALTXUPNMqk5x16dgGsK6e8oREBxTvu_V6nOyJw4Vd3bXWNX6bemhQ1Zi0avUvvGot5WS8lBzPvSRpg6owdif6iFISvwbIkQYIofpSlQELVmBLzdOPWkxvj2PYc4D-j72KsJbh23k6mzSsq68xBXfimYu3OrsTJoRZYO5yQek1UXoSpE2TRe-TyF6tqeq2pvObf7QeEuwkNwhC_NUF9_bsmyQZQWAr6XulLgoWiDYq7sLQrId1FBeG7vy0I4uHX_YBiiA4"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full pt-16 pb-8 px-8 border-t border-stone-200/20 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-headline text-lime-900 dark:text-stone-50">Bubble Tea España</div>
+<p class="text-stone-500 dark:text-stone-500 text-sm font-body">La Guía de Autor para los amantes del té premium en la península.</p>
+</div>
+<div class="space-y-4">
+<h6 class="font-headline text-lg text-lime-800 dark:text-lime-500">Ciudades</h6>
+<ul class="space-y-2">
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Madrid</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Barcelona</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Vigo</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-headline text-lg text-lime-800 dark:text-lime-500">Legal</h6>
+<ul class="space-y-2">
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Privacidad</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Cookies</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-headline text-lg text-lime-800 dark:text-lime-500">Comunidad</h6>
+<ul class="space-y-2">
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Contacto</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm underline decoration-lime-500/30" href="#">Únete al club</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-200/10 flex justify-between items-center">
+<p class="text-stone-500 text-xs font-body">© 2024 Bubble Tea España. La Guía de Autor.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-400">language</span>
+<span class="material-symbols-outlined text-stone-400">share</span>
+</div>
+</div>
+</footer>
+</body></html>

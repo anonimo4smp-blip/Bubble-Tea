@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "primary": "#4c6700",
+              "on-secondary-fixed": "#331200",
+              "tertiary-container": "#ff8272",
+              "surface-bright": "#fff8f3",
+              "on-surface-variant": "#444938",
+              "on-primary-fixed": "#151f00",
+              "secondary-fixed": "#ffdbca",
+              "on-tertiary-container": "#7d0706",
+              "inverse-surface": "#353028",
+              "outline": "#757966",
+              "on-secondary": "#ffffff",
+              "inverse-primary": "#aed456",
+              "surface-dim": "#e2d9ce",
+              "surface-container": "#f6ece1",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#aed456",
+              "inverse-on-surface": "#f9efe4",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#ffdad5",
+              "surface-container-highest": "#ebe1d6",
+              "on-primary-container": "#304200",
+              "surface-container-low": "#fcf2e7",
+              "background": "#fff8f3",
+              "surface-variant": "#ebe1d6",
+              "surface": "#fff8f3",
+              "secondary": "#89502e",
+              "on-background": "#1f1b14",
+              "primary-container": "#8fb339",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "secondary-container": "#feb289",
+              "on-secondary-fixed-variant": "#6d3919",
+              "primary-fixed": "#c9f16f",
+              "on-secondary-container": "#794222",
+              "on-primary-fixed-variant": "#394d00",
+              "tertiary": "#af2f25",
+              "surface-tint": "#4c6700",
+              "on-tertiary-fixed": "#410001",
+              "outline-variant": "#c5c9b3",
+              "on-tertiary-fixed-variant": "#8d1510",
+              "secondary-fixed-dim": "#ffb68f",
+              "tertiary-fixed-dim": "#ffb4a9",
+              "surface-container-high": "#f1e7dc",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1f1b14"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #4c6700 0%, #8fb339 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed-variant">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-full px-6 py-3 bg-stone-50/80 dark:bg-stone-900/80 glass-nav shadow-[0_20px_50px_rgba(31,27,20,0.05)] flex justify-between items-center z-50">
+<div class="text-2xl font-serif italic text-lime-900 dark:text-lime-50">Bubble Tea España</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-lime-700 dark:text-lime-300 font-bold border-b-2 border-lime-700 font-label tracking-widest uppercase text-xs" href="#">Explorar ciudades</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-lime-800 transition-all duration-300 font-label tracking-widest uppercase text-xs" href="#">Rankings</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-lime-800 transition-all duration-300 font-label tracking-widest uppercase text-xs" href="#">Sobre nosotros</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label tracking-widest uppercase text-xs hover:scale-95 transition-all duration-200">
+            Únete al club
+        </button>
+</nav>
+<main class="pt-24 lg:pt-32">
+<!-- Hero Section: Madrid Editorial -->
+<section class="px-6 lg:px-12 max-w-7xl mx-auto mb-16 lg:mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 relative z-10">
+<span class="font-label text-primary tracking-[0.2em] uppercase text-xs mb-4 block">Destino Destacado</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface mb-8 leading-[1.1] tracking-tight">
+                        Madrid: El <span class="italic text-primary">Corazón</span> del Boba
+                    </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                        Desde los callejones artísticos de Malasaña hasta el esplendor burgués de Salamanca, Madrid ha transformado el bubble tea en una extensión de su propia cultura del "terraceo". Aquí, la tradición del té se encuentra con la energía eléctrica de la capital.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary rounded-full px-8 py-4 font-label tracking-widest uppercase text-sm hover:opacity-90 transition-opacity">
+                            Explorar Guía
+                        </button>
+<button class="text-primary font-label tracking-widest uppercase text-sm px-8 py-4 border border-outline-variant rounded-full hover:bg-surface-container-low transition-colors">
+                            Ver Mapa
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative">
+<img alt="Aerial view of Gran Via in Madrid" class="w-full h-full object-cover" data-alt="Cinematic street photography of Madrid's Gran Via at sunset, warm golden light reflecting off historic buildings, high-end editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkogiDe-oGEGZ_dYoIF2qFbhdW3guWSXL_O57Bw2utjcJTKJnuI0Cy_iVE-ryeYDdX8QzTOzEzJez-bh0VJG9lNWGlbTBzGkMO3Zmn4cQvDCed70YFWS_QbFeBa_5OaybXVhrT4oOuakxumHhXFGptFqxD56ScjR90_EzVTyl0O42Hi3yBXHp3C_x69QyJQ-nTc358hk0HZO4K74lrbjJZjuJUNDLJW5Z6ojQ0nK7s-w51RUbu8OD-qqnIKSCU9oIxE7Jk1VNY8UNY"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<!-- Overlapping Glass Card -->
+<div class="absolute -bottom-6 -left-6 md:-left-12 p-8 bg-surface-container-lowest/90 glass-nav rounded-2xl shadow-xl max-w-[240px]">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="font-headline text-2xl text-on-surface">42 locales</p>
+<p class="font-body text-sm text-on-surface-variant">Curados por expertos en la ciudad.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="sticky top-24 z-40 bg-surface/80 glass-nav py-4 mb-12">
+<div class="max-w-7xl mx-auto px-6 overflow-x-auto no-scrollbar flex items-center gap-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline shrink-0 mr-2">Filtrar por:</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap">Todos</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-container transition-colors">Malasaña</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-container transition-colors">Chueca</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-container transition-colors">Salamanca</button>
+<div class="w-px h-6 bg-outline-variant mx-2"></div>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-container transition-colors">Vegano</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-container transition-colors">Para Estudiar</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-container transition-colors">Especialidad</button>
+</div>
+</section>
+<!-- Curated Rankings -->
+<section class="px-6 lg:px-12 max-w-7xl mx-auto mb-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<h2 class="font-headline text-4xl text-on-surface mb-2">Los Imprescindibles</h2>
+<p class="font-body text-on-surface-variant italic">La selección definitiva de nuestra redacción.</p>
+</div>
+<p class="font-label text-xs uppercase tracking-widest text-outline">Actualizado: Mayo 2024</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Shop Card 1 -->
+<div class="group flex flex-col bg-surface-container-low rounded-3xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Modern minimalist tea shop interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist bubble tea shop interior with warm lighting, wood accents, and clean editorial composition, matcha drinks on marble tables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqf9lv2D8byHoKMON0kUNpGeU-4MHfM71NQLvSo4SHN5Yud84S-lR9GJqKMGqEqb7Ju_FZQkfe1WZi7u1EXvyIFSIu3-uqv6TuultdVKejlIdIwuoLgReXOmJDku0jyyjGspm6vC7rwIIIlXE55JRyTYkEIfgAHBdhV6qxamOEbSwxfESxkhq5L342qfWDowogjMVkimFBLyHt7PMNTNZM9aQoGP2m9tvcXTo41iX-46egB3IoxPxEFU_L5P_GRxtah7R08YNtZHty"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-headline text-xl w-10 h-10 flex items-center justify-center rounded-full shadow-lg">1</div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.9</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl text-on-surface mb-1">Mochi Matcha Atelier</h3>
+<p class="font-body text-sm text-outline">Malasaña • €€</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-[10px] font-label uppercase tracking-wider text-primary border border-primary/10">Especialidad</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-[10px] font-label uppercase tracking-wider text-primary border border-primary/10">Estilo Vintage</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Famosos por su matcha de grado ceremonial y perlas de tapioca infusionadas en miel orgánica.</p>
+<a class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Shop Card 2 -->
+<div class="group flex flex-col bg-surface-container-low rounded-3xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Colorful bubble tea drinks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant tropical fruit bubble tea drinks with fresh fruit slices, bright sunlight, commercial food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo2eWxL9ksHF5PmjbY9w8v2yjx1rpbbiVGTtPPecR7aTLhjl8H4bFINN-n32qGmwumRgApsZquvmV2vipRz9VxkA7HfemgqvwrDSK_-G6xu3r0-ZyaGfACQx7WWyxEomwfO56IUM2PrvBAIJaVmRUjDiY8PGJ2p7E8lU2mECPYRZP5TTBBu_cfUOWXc0cartBEUuOHSaAt_tUeMzQwZbgOXjleNdwEhwsrWD2YQE5DkGEuilrvDjtpQfBJy_oUulktLiVGT9tlLinf"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-headline text-xl w-10 h-10 flex items-center justify-center rounded-full shadow-lg">2</div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.7</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl text-on-surface mb-1">Urban Boba Lab</h3>
+<p class="font-body text-sm text-outline">Chueca • €€</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-[10px] font-label uppercase tracking-wider text-primary border border-primary/10">Fruta Natural</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-[10px] font-label uppercase tracking-wider text-primary border border-primary/10">Vegano</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Un laboratorio de sabores donde cada bebida se personaliza al gramo. Imprescindible su taro fresco.</p>
+<a class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Shop Card 3 -->
+<div class="group flex flex-col bg-surface-container-low rounded-3xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Sophisticated tea cups" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional porcelain tea cups mixed with modern glass boba cups on a dark stone surface, elegant moody lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqPvdvAMiTCqSFThYjpp0Ayo9wWdjpw3dnuyZZpMfDvKapojeuYamZhDSiCTErwidUz3pN0klnmrOBnIfwEL9Nh8NV5Cb9UuC2NDF_3YpeOJHBk0gdJjEN50pN0giaQXr03gxuIbdNwUJHrdHoLIlO2BdNCqLdk5XitiSQP_VlF1YSIoHVukJUgLw9Bohub-Z5Kym2s7XEt8GWKqI51-NoBdqHnErGimA_TJr_M73cSxOH0U9opgK2qlvqKrFz0gCwFd1zfRYMx8Kw"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-headline text-xl w-10 h-10 flex items-center justify-center rounded-full shadow-lg">3</div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.8</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl text-on-surface mb-1">Tea Room Madrid</h3>
+<p class="font-body text-sm text-outline">Salamanca • €€€</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-[10px] font-label uppercase tracking-wider text-primary border border-primary/10">Premium</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-[10px] font-label uppercase tracking-wider text-primary border border-primary/10">Gourmet</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">La sofisticación del té tradicional de Taiwan elevada por la repostería fina madrileña.</p>
+<a class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="mb-24 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="bg-surface-container-low rounded-[3rem] p-4 lg:p-8 flex flex-col lg:flex-row gap-8 overflow-hidden min-h-[600px]">
+<div class="lg:w-1/3 p-4 flex flex-col">
+<h2 class="font-headline text-3xl text-on-surface mb-4 leading-tight">Explora el Mapa Boba</h2>
+<p class="font-body text-on-surface-variant mb-8 text-sm">Ubica tus próximos destinos y planifica una ruta por los mejores barrios de la capital.</p>
+<div class="space-y-4 overflow-y-auto max-h-[400px] no-scrollbar">
+<div class="p-4 bg-surface-container-lowest rounded-2xl flex items-center gap-4 cursor-pointer hover:bg-primary-container/20 transition-colors">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">1</div>
+<div>
+<p class="font-bold text-sm">Mochi Matcha</p>
+<p class="text-xs text-outline">Calle del Pez, 14</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-2xl flex items-center gap-4 cursor-pointer hover:bg-primary-container/20 transition-colors">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">2</div>
+<div>
+<p class="font-bold text-sm">Urban Boba Lab</p>
+<p class="text-xs text-outline">Calle de Pelayo, 22</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-2xl flex items-center gap-4 cursor-pointer hover:bg-primary-container/20 transition-colors">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">3</div>
+<div>
+<p class="font-bold text-sm">Tea Room</p>
+<p class="text-xs text-outline">Calle Serrano, 98</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3 rounded-3xl overflow-hidden relative min-h-[400px] lg:min-h-auto">
+<!-- Placeholder for Map -->
+<div class="absolute inset-0 bg-[#f6ece1]">
+<img alt="Stylized map layout" class="w-full h-full object-cover opacity-40 grayscale" data-alt="Minimalist, clean graphic map of Madrid city center with subtle earth tones and markers in matcha green, high-end design style." data-location="Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_2jOtboUaftctlqU_q3QET37IDsud1n0MtMMut2vTmp9JIt9StyKSWUUYJKFuhX65tTgXq0zacUTkRHZIzKDyCQmn769paj2BQZqZLTWDZRdDnaPiXyPbbCN_8tJWwW6a6-TMVqKuTwDRyHDC5FMLJ-jpt_WcZY4LZ2ICuCtjTcWA05UxVY7Zq5B_Q5HOmWcfEAbgB_JsWGjJ1x0fVhc5AHNXS80iHk8hKVmJM9Z5fWrvyDMsaaSubBV1y_eJetlOV0T2N9P40izC"/>
+<!-- Custom Markers -->
+<div class="absolute top-1/3 left-1/4 animate-bounce">
+<div class="bg-primary text-on-primary p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2">
+<div class="bg-primary text-on-primary p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-1/4 right-1/3">
+<div class="bg-primary text-on-primary p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Call to Action -->
+<section class="px-6 lg:px-12 max-w-7xl mx-auto mb-24">
+<div class="editorial-gradient rounded-[3rem] p-12 lg:p-20 text-center text-on-primary relative overflow-hidden">
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl mb-6 tracking-tight">Recibe nuestra Guía de Autor</h2>
+<p class="font-body text-lg opacity-90 mb-10">Suscríbete para recibir mensualmente el ranking secreto de las aperturas más exclusivas de Madrid.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-white/20 backdrop-blur-md border-none rounded-full px-6 py-4 placeholder:text-white/70 focus:ring-2 focus:ring-white/50 text-white outline-none" placeholder="Tu email editorial" type="email"/>
+<button class="bg-white text-primary rounded-full px-8 py-4 font-label tracking-widest uppercase text-sm font-bold hover:bg-surface-container-low transition-colors whitespace-nowrap">
+                            Suscribirme
+                        </button>
+</form>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -right-12 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full pt-16 pb-8 px-8 border-t border-stone-200/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif text-lime-900 dark:text-stone-50 mb-6">Bubble Tea España</div>
+<p class="text-stone-500 dark:text-stone-500 text-sm leading-relaxed">La Guía de Autor para los amantes del té urbano en España.</p>
+</div>
+<div>
+<h4 class="font-headline text-lg text-lime-800 dark:text-lime-500 mb-6">Ciudades</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Madrid</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Barcelona</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Vigo</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-lg text-lime-800 dark:text-lime-500 mb-6">Empresa</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Sobre nosotros</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Contacto</a></li>
+<li><a class="text-stone-500 hover:text-lime-600 transition-colors text-sm" href="#">Privacidad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-lg text-lime-800 dark:text-lime-500 mb-6">Social</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-lime-800 dark:text-lime-500 hover:bg-lime-50 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-lime-800 dark:text-lime-500 hover:bg-lime-50 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-12 mt-12 border-t border-stone-200/20 text-center">
+<p class="text-stone-500 dark:text-stone-500 text-sm">© 2024 Bubble Tea España. La Guía de Autor.</p>
+</div>
+</footer>
+</body></html>
