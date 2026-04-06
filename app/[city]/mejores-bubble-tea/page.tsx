@@ -1,22 +1,33 @@
-import { notFound } from "next/navigation";
+import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
+import { and, eq } from "drizzle-orm";
+import { notFound } from "next/navigation";
+import Footer from "@/components/Footer";
+import Icon from "@/components/Icon";
 import { db } from "@/db";
 import {
   cities,
-  shops,
   shopFeatures,
-  shopScores,
   shopImages,
+  shops,
+  shopScores,
 } from "@/db/schema";
-import { eq, and } from "drizzle-orm";
-import type { Metadata } from "next";
-import Footer from "@/components/Footer";
-import ShopCard from "@/components/ShopCard";
-import { JsonLd, breadcrumbJsonLd, collectionPageJsonLd } from "@/lib/jsonld";
+import {
+  JsonLd,
+  breadcrumbJsonLd,
+  collectionPageJsonLd,
+  itemListJsonLd,
+} from "@/lib/jsonld";
+import { getPublishedCityParams } from "@/lib/static-params";
 
 type Props = {
   params: Promise<{ city: string }>;
 };
+
+export async function generateStaticParams() {
+  return getPublishedCityParams();
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city: slug } = await params;
@@ -50,7 +61,6 @@ export default async function RankingPage({ params }: Props) {
 
   if (!city) notFound();
 
-  // Get published shops with scores
   const publishedShops = await db
     .select({
       id: shops.id,
@@ -67,10 +77,7 @@ export default async function RankingPage({ params }: Props) {
 
   const shopIds = publishedShops.map((s) => s.id);
 
-  // Fetch related data
-  const allFeatures = shopIds.length
-    ? await db.select().from(shopFeatures)
-    : [];
+  const allFeatures = shopIds.length ? await db.select().from(shopFeatures) : [];
   const featuresMap = new Map(
     allFeatures
       .filter((f) => shopIds.includes(f.shopId))
@@ -91,7 +98,6 @@ export default async function RankingPage({ params }: Props) {
       .map((i) => [i.shopId, i])
   );
 
-  // Filter: must have scores and be reviewed in last 120 days
   const now = new Date();
   const cutoff = new Date(now.getTime() - 120 * 24 * 60 * 60 * 1000);
 
@@ -108,15 +114,25 @@ export default async function RankingPage({ params }: Props) {
         shop.lastReviewedAt != null &&
         new Date(shop.lastReviewedAt) >= cutoff
     )
-    .sort(
-      (a, b) => (b.scores!.totalScore ?? 0) - (a.scores!.totalScore ?? 0)
-    );
+    .sort((a, b) => (b.scores!.totalScore ?? 0) - (a.scores!.totalScore ?? 0));
 
   const badgeColors = [
     "bg-primary text-on-primary",
     "bg-primary-container text-on-primary-container",
     "bg-secondary-container text-on-secondary-container",
   ];
+  const rankingUrl = `/${slug}/mejores-bubble-tea`;
+  const itemList = itemListJsonLd({
+    name: `Ranking de bubble tea en ${city.name}`,
+    description: `Listado ordenado de los mejores locales de bubble tea en ${city.name} segun metodologia editorial.`,
+    url: rankingUrl,
+    items: rankedShops.map((shop, index) => ({
+      position: index + 1,
+      name: shop.name,
+      url: `/${slug}/${shop.slug}`,
+      imageUrl: shop.image?.imageUrl ?? null,
+    })),
+  });
 
   return (
     <>
@@ -130,24 +146,20 @@ export default async function RankingPage({ params }: Props) {
           collectionPageJsonLd({
             name: `Mejores Bubble Tea en ${city.name}`,
             description: `Ranking editorial de los mejores locales de bubble tea en ${city.name}.`,
-            url: `/${slug}/mejores-bubble-tea`,
+            url: rankingUrl,
           }),
+          ...(rankedShops.length > 0 ? [itemList] : []),
         ]}
       />
       <main className="pt-24">
-        {/* Hero */}
         <section className="px-6 pb-12">
           <div className="max-w-7xl mx-auto">
-            {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-xs text-on-surface-variant mb-8">
               <Link href="/" className="hover:text-primary transition-colors">
                 Inicio
               </Link>
               <span>/</span>
-              <Link
-                href={`/${slug}`}
-                className="hover:text-primary transition-colors"
-              >
+              <Link href={`/${slug}`} className="hover:text-primary transition-colors">
                 {city.name}
               </Link>
               <span>/</span>
@@ -159,8 +171,7 @@ export default async function RankingPage({ params }: Props) {
                 Ranking editorial · Actualizado 2026
               </p>
               <h1 className="text-4xl md:text-6xl font-serif text-on-background mb-6">
-                Mejores Bubble Tea en{" "}
-                <span className="italic">{city.name}</span>
+                Mejores Bubble Tea en <span className="italic">{city.name}</span>
               </h1>
               <p className="text-on-surface-variant max-w-xl mx-auto leading-relaxed">
                 Puntuación editorial basada en calidad (35%), precio (15%),
@@ -171,22 +182,19 @@ export default async function RankingPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Ranking list */}
         <section className="px-6 pb-24">
           <div className="max-w-4xl mx-auto">
             {rankedShops.length === 0 ? (
               <div className="text-center py-20">
-                <span className="material-symbols-outlined text-5xl text-on-surface-variant/40 mb-4 block">
-                  emoji_events
-                </span>
+                <Icon
+                  name="emoji_events"
+                  className="text-5xl text-on-surface-variant/40 mb-4 block"
+                />
                 <p className="text-on-surface-variant mb-4">
-                  Aún no hay suficientes locales evaluados para el ranking en{" "}
+                  Aun no hay suficientes locales evaluados para el ranking en{" "}
                   {city.name}.
                 </p>
-                <Link
-                  href={`/${slug}`}
-                  className="text-primary font-bold hover:underline"
-                >
+                <Link href={`/${slug}`} className="text-primary font-bold hover:underline">
                   Ver todos los locales
                 </Link>
               </div>
@@ -203,28 +211,26 @@ export default async function RankingPage({ params }: Props) {
                     <Link
                       key={shop.id}
                       href={`/${slug}/${shop.slug}`}
-                      className="group bg-surface-container-low p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6 md:gap-8 hover:bg-surface-container transition-colors"
+                      className="group card-soft-lg-hover p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 md:gap-8"
                     >
-                      {/* Position badge */}
                       <div
                         className={`w-16 h-16 md:w-20 md:h-20 ${badge} rounded-full flex items-center justify-center text-2xl md:text-3xl font-serif shrink-0`}
                       >
                         {position}
                       </div>
 
-                      {/* Image */}
                       {shop.image ? (
-                        <div className="w-20 h-20 rounded-xl overflow-hidden shrink-0 hidden md:block">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
+                        <div className="relative hidden h-20 w-20 shrink-0 overflow-hidden rounded-xl md:block">
+                          <Image
                             src={shop.image.imageUrl}
                             alt={shop.image.altText ?? shop.name}
-                            className="w-full h-full object-cover"
+                            fill
+                            sizes="80px"
+                            className="object-cover"
                           />
                         </div>
                       ) : null}
 
-                      {/* Info */}
                       <div className="flex-grow text-center md:text-left">
                         <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-2">
                           <h2 className="text-xl md:text-2xl font-bold text-on-background group-hover:text-primary transition-colors">
@@ -237,7 +243,7 @@ export default async function RankingPage({ params }: Props) {
                           )}
                           {shop.averagePrice != null && (
                             <span className="text-primary font-bold text-sm">
-                              ~{shop.averagePrice.toFixed(1)}€
+                              ~{shop.averagePrice.toFixed(1)} EUR
                             </span>
                           )}
                         </div>
@@ -246,7 +252,6 @@ export default async function RankingPage({ params }: Props) {
                             {shop.whyItStandsOut}
                           </p>
                         )}
-                        {/* Score breakdown */}
                         <div className="flex flex-wrap justify-center md:justify-start gap-3">
                           {[
                             {
@@ -278,11 +283,8 @@ export default async function RankingPage({ params }: Props) {
                         </div>
                       </div>
 
-                      {/* Arrow */}
                       <div className="bg-surface-container-lowest p-3 rounded-full group-hover:bg-primary group-hover:text-on-primary transition-all shrink-0">
-                        <span className="material-symbols-outlined">
-                          chevron_right
-                        </span>
+                        <Icon name="chevron_right" />
                       </div>
                     </Link>
                   );
@@ -292,15 +294,12 @@ export default async function RankingPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Back to city */}
         <section className="px-6 py-16 bg-surface-container-low text-center">
           <Link
             href={`/${slug}`}
             className="inline-flex items-center gap-2 text-tertiary font-bold hover:gap-4 transition-all"
           >
-            <span className="material-symbols-outlined text-sm">
-              arrow_back
-            </span>
+            <Icon name="arrow_back" className="text-sm" />
             Ver todos los locales en {city.name}
           </Link>
         </section>

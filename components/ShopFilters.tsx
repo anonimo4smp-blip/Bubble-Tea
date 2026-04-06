@@ -1,7 +1,7 @@
 "use client";
 
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { useCallback } from "react";
+import Icon from "@/components/Icon";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const FEATURE_FILTERS = [
   { key: "vegan", label: "Vegano", icon: "eco" },
@@ -11,13 +11,13 @@ const FEATURE_FILTERS = [
   { key: "pet", label: "Pet-friendly", icon: "pets" },
   { key: "takeaway", label: "Para llevar", icon: "takeout_dining" },
   { key: "accessible", label: "Accesible", icon: "accessible" },
-];
+] as const;
 
 const PRICE_FILTERS = [
-  { key: "1", label: "€ Económico" },
-  { key: "2", label: "€€ Medio" },
-  { key: "3", label: "€€€ Premium" },
-];
+  { key: "1", label: "Económico" },
+  { key: "2", label: "Medio" },
+  { key: "3", label: "Premium" },
+] as const;
 
 export default function ShopFilters() {
   const router = useRouter();
@@ -28,19 +28,16 @@ export default function ShopFilters() {
   const activePrice = searchParams.get("p") ?? "";
   const activeNeighborhood = searchParams.get("barrio") ?? "";
 
-  const updateParams = useCallback(
-    (key: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      if (value) {
-        params.set(key, value);
-      } else {
-        params.delete(key);
-      }
-      const qs = params.toString();
-      router.push(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
-    },
-    [router, pathname, searchParams]
-  );
+  const updateParams = (key: string, value: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value) {
+      params.set(key, value);
+    } else {
+      params.delete(key);
+    }
+    const qs = params.toString();
+    router.push(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+  };
 
   const toggleFeature = (key: string) => {
     const current = new Set(activeFeatures);
@@ -56,44 +53,41 @@ export default function ShopFilters() {
     updateParams("p", activePrice === key ? "" : key);
   };
 
-  const hasFilters = activeFeatures.length > 0 || activePrice || activeNeighborhood;
+  const hasFilters =
+    activeFeatures.length > 0 || Boolean(activePrice) || Boolean(activeNeighborhood);
 
   return (
-    <div className="space-y-4">
-      {/* Feature chips */}
-      <div className="flex flex-wrap gap-2">
+    <div className="space-y-4" role="search" aria-label="Filtros de locales">
+      <div className="flex flex-wrap gap-2" role="group" aria-label="Filtros por característica">
         {FEATURE_FILTERS.map(({ key, label, icon }) => {
           const active = activeFeatures.includes(key);
           return (
             <button
               key={key}
               onClick={() => toggleFeature(key)}
-              className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold transition-colors ${
+              aria-pressed={active}
+              className={`chip ${
                 active
-                  ? "bg-primary-fixed text-on-primary-fixed"
-                  : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container"
+                  ? "chip-active"
+                  : "chip-neutral"
               }`}
             >
-              <span className="material-symbols-outlined text-sm">{icon}</span>
+              <Icon name={icon} className="text-sm" />
               {label}
             </button>
           );
         })}
       </div>
 
-      {/* Price chips */}
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2" role="group" aria-label="Filtros por precio">
         {PRICE_FILTERS.map(({ key, label }) => {
           const active = activePrice === key;
           return (
             <button
               key={key}
               onClick={() => togglePrice(key)}
-              className={`px-3.5 py-2 rounded-full text-xs font-semibold transition-colors ${
-                active
-                  ? "bg-primary-fixed text-on-primary-fixed"
-                  : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container"
-              }`}
+              aria-pressed={active}
+              className={`chip ${active ? "chip-active" : "chip-neutral"}`}
             >
               {label}
             </button>
@@ -103,7 +97,7 @@ export default function ShopFilters() {
         {hasFilters && (
           <button
             onClick={() => router.push(pathname, { scroll: false })}
-            className="px-3.5 py-2 rounded-full text-xs font-semibold text-error bg-error/5 hover:bg-error/10 transition-colors"
+            className="chip chip-danger"
           >
             Limpiar filtros
           </button>

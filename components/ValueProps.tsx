@@ -1,3 +1,5 @@
+import Icon from "@/components/Icon";
+
 const props = [
   {
     icon: "verified",
@@ -23,27 +25,20 @@ const props = [
     description:
       "Precios, horarios y nuevos sabores revisados mensualmente.",
   },
-];
+] as const;
 
 export default function ValueProps() {
   return (
-    <section className="py-24 px-6 bg-surface-container-low">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+    <section className="bg-surface-container-low px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           {props.map((item) => (
-            <div key={item.title} className="space-y-4">
+            <div key={item.title} className="card-elevated space-y-4 p-8">
               <div className="text-primary">
-                <span
-                  className="material-symbols-outlined text-4xl"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  {item.icon}
-                </span>
+                <Icon name={item.icon} className="text-4xl" />
               </div>
-              <h4 className="text-xl font-bold">{item.title}</h4>
-              <p className="text-sm text-on-surface-variant leading-relaxed">
-                {item.description}
-              </p>
+              <h4 className="section-title text-xl">{item.title}</h4>
+              <p className="section-copy text-sm">{item.description}</p>
             </div>
           ))}
         </div>

@@ -52,6 +52,60 @@ export function collectionPageJsonLd({
   };
 }
 
+export function itemListJsonLd({
+  name,
+  description,
+  url,
+  items,
+}: {
+  name: string;
+  description?: string;
+  url: string;
+  items: {
+    position: number;
+    name: string;
+    url: string;
+    imageUrl?: string | null;
+  }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    ...(description ? { description } : {}),
+    url: `${SITE_URL}${url}`,
+    numberOfItems: items.length,
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    itemListElement: items.map((item) => ({
+      "@type": "ListItem",
+      position: item.position,
+      item: {
+        "@type": "LocalBusiness",
+        name: item.name,
+        url: `${SITE_URL}${item.url}`,
+        ...(item.imageUrl ? { image: item.imageUrl } : {}),
+      },
+    })),
+  };
+}
+
+// ─── FAQPage ────────────────────────────────────────────────────────────────
+
+export function faqPageJsonLd(faqs: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: a,
+      },
+    })),
+  };
+}
+
 // ─── LocalBusiness (shop detail) ────────────────────────────────────────────
 
 export function localBusinessJsonLd({
@@ -64,6 +118,7 @@ export function localBusinessJsonLd({
   priceRange,
   imageUrl,
   aggregateRating,
+  ratingCount,
 }: {
   name: string;
   description?: string | null;
@@ -74,6 +129,7 @@ export function localBusinessJsonLd({
   priceRange?: string | null;
   imageUrl?: string | null;
   aggregateRating?: number | null;
+  ratingCount?: number | null;
 }) {
   return {
     "@context": "https://schema.org",
@@ -102,13 +158,14 @@ export function localBusinessJsonLd({
         }
       : {}),
     ...(priceRange ? { priceRange } : {}),
-    ...(aggregateRating != null
+    ...(aggregateRating != null && ratingCount != null && ratingCount > 0
       ? {
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: (aggregateRating / 20).toFixed(1), // 0-100 → 0-5
             bestRating: "5",
             worstRating: "1",
+            ratingCount,
           },
         }
       : {}),

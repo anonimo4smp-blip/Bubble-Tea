@@ -14,10 +14,8 @@ type CityData = {
   longitudeCenter: number | null;
 };
 
-const inputClass =
-  "w-full bg-surface-container-low rounded-xl px-4 py-3 text-sm text-on-background outline-none focus:ring-2 focus:ring-primary/30 placeholder:text-on-surface-variant/50";
-
-const labelClass = "block text-sm font-semibold text-on-background mb-1.5";
+const inputClass = "form-control";
+const labelClass = "form-label";
 
 export function CityForm({
   city,
@@ -34,13 +32,8 @@ export function CityForm({
     <form action={action} className="space-y-10">
       {city?.id && <input type="hidden" name="id" value={city.id} />}
 
-      {error && (
-        <p className="text-sm text-error font-medium bg-error/5 rounded-xl px-4 py-3">
-          {error}
-        </p>
-      )}
+      {error && <p className="form-error">{error}</p>}
 
-      {/* Datos básicos */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Datos básicos
@@ -89,7 +82,6 @@ export function CityForm({
         </div>
       </section>
 
-      {/* Coordenadas */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Coordenadas del centro
@@ -126,7 +118,6 @@ export function CityForm({
         </div>
       </section>
 
-      {/* Descripciones */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Contenido editorial
@@ -142,7 +133,7 @@ export function CityForm({
               rows={2}
               defaultValue={city?.shortDescription ?? ""}
               placeholder="Breve resumen de la escena de bubble tea en la ciudad..."
-              className={inputClass + " resize-none"}
+              className="form-textarea"
             />
           </div>
           <div>
@@ -155,13 +146,12 @@ export function CityForm({
               rows={5}
               defaultValue={city?.longDescription ?? ""}
               placeholder="Texto editorial completo sobre la ciudad..."
-              className={inputClass + " resize-none"}
+              className="form-textarea"
             />
           </div>
         </div>
       </section>
 
-      {/* SEO */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">SEO</h2>
         <div className="space-y-6">
@@ -188,7 +178,7 @@ export function CityForm({
               rows={2}
               defaultValue={city?.seoDescription ?? ""}
               placeholder="Descubre los mejores locales de bubble tea en Madrid..."
-              className={inputClass + " resize-none"}
+              className="form-textarea"
             />
           </div>
           <div>
@@ -207,18 +197,11 @@ export function CityForm({
         </div>
       </section>
 
-      {/* Actions */}
       <div className="flex items-center gap-4 pt-4">
-        <button
-          type="submit"
-          className="bg-primary text-on-primary rounded-full px-8 py-3 font-bold text-sm hover:opacity-90 transition-opacity"
-        >
+        <button type="submit" className="btn btn-primary btn-md">
           {submitLabel}
         </button>
-        <Link
-          href="/admin/cities"
-          className="text-sm font-semibold text-on-surface-variant hover:text-on-background transition-colors"
-        >
+        <Link href="/admin/cities" className="btn btn-subtle btn-sm">
           Cancelar
         </Link>
       </div>

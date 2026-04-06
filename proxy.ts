@@ -1,5 +1,10 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import {
+  getAdminAuthErrorMessage,
+  hasAdminEmailAllowlist,
+  isAdminEmailAllowed,
+} from "@/lib/admin-auth";
 
 export async function proxy(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
@@ -31,16 +36,33 @@ export async function proxy(request: NextRequest) {
 
   const isAdminRoute = request.nextUrl.pathname.startsWith("/admin");
   const isLoginPage = request.nextUrl.pathname === "/admin/login";
+  const hasAllowlist = hasAdminEmailAllowlist();
+  const isAuthorizedUser = isAdminEmailAllowed(user?.email);
 
-  if (isAdminRoute && !isLoginPage && !user) {
-    const loginUrl = request.nextUrl.clone();
-    loginUrl.pathname = "/admin/login";
-    return NextResponse.redirect(loginUrl);
+  if (isAdminRoute && !isLoginPage) {
+    if (!user) {
+      const loginUrl = request.nextUrl.clone();
+      loginUrl.pathname = "/admin/login";
+      return NextResponse.redirect(loginUrl);
+    }
+
+    if (!hasAllowlist || !isAuthorizedUser) {
+      const loginUrl = request.nextUrl.clone();
+      loginUrl.pathname = "/admin/login";
+      loginUrl.searchParams.set(
+        "error",
+        getAdminAuthErrorMessage(
+          hasAllowlist ? "forbidden" : "missing_allowlist"
+        )
+      );
+      return NextResponse.redirect(loginUrl);
+    }
   }
 
-  if (isLoginPage && user) {
+  if (isLoginPage && user && hasAllowlist && isAuthorizedUser) {
     const adminUrl = request.nextUrl.clone();
     adminUrl.pathname = "/admin";
+    adminUrl.search = "";
     return NextResponse.redirect(adminUrl);
   }
 

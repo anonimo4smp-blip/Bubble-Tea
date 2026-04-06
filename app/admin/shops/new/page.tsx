@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Icon from "@/components/Icon";
 import { db } from "@/db";
 import { cities } from "@/db/schema";
-import { ShopForm } from "../shop-form";
 import { createShop } from "../actions";
+import { ShopForm } from "../shop-form";
 
 export default async function NewShopPage({
   searchParams,
@@ -19,11 +20,8 @@ export default async function NewShopPage({
   return (
     <div className="min-h-screen bg-surface">
       <header className="bg-surface-container-lowest border-b border-surface-container-high px-8 py-4 flex items-center gap-3">
-        <Link
-          href="/admin/shops"
-          className="text-on-surface-variant hover:text-on-background transition-colors"
-        >
-          <span className="material-symbols-outlined text-xl">arrow_back</span>
+        <Link href="/admin/shops" className="btn btn-subtle btn-icon">
+          <Icon name="arrow_back" className="text-xl" />
         </Link>
         <span className="font-serif italic text-xl text-on-background">
           Bubble Tea España{" "}

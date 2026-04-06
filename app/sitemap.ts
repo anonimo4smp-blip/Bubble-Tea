@@ -15,9 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .from(cities)
     .where(eq(cities.status, "published"));
 
-  const cityIdToSlug = new Map(
-    publishedCities.map((c) => [c.id, c.slug])
-  );
+  const cityIdToSlug = new Map(publishedCities.map((c) => [c.id, c.slug]));
 
   // Published shops
   const publishedShops = await db
@@ -37,23 +35,53 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${SITE_URL}/ciudades`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/bubble-tea-en-espana`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/contacto`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/privacidad`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${SITE_URL}/cookies`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 
   // City + ranking pages
   const cityPages: MetadataRoute.Sitemap = publishedCities.flatMap((city) => [
-    {
-      url: `${SITE_URL}/${city.slug}`,
-      lastModified: city.updatedAt,
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/${city.slug}/mejores-bubble-tea`,
-      lastModified: city.updatedAt,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-  ]);
+      {
+        url: `${SITE_URL}/${city.slug}`,
+        lastModified: city.updatedAt,
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+      },
+      {
+        url: `${SITE_URL}/${city.slug}/mejores-bubble-tea`,
+        lastModified: city.updatedAt,
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      },
+    ]);
 
   // Shop detail pages
   const shopPages: MetadataRoute.Sitemap = publishedShops

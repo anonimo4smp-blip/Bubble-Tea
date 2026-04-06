@@ -55,13 +55,9 @@ type ScoresData = {
 
 type CityOption = { id: number; name: string };
 
-const inputClass =
-  "w-full bg-surface-container-low rounded-xl px-4 py-3 text-sm text-on-background outline-none focus:ring-2 focus:ring-primary/30 placeholder:text-on-surface-variant/50";
-
-const labelClass = "block text-sm font-semibold text-on-background mb-1.5";
-
-const checkboxLabel =
-  "flex items-center gap-2.5 text-sm text-on-background cursor-pointer";
+const inputClass = "form-control";
+const labelClass = "form-label";
+const checkboxLabel = "form-checkbox-label";
 
 const WEEKDAY_LABELS: Record<string, string> = {
   monday: "Lunes",
@@ -86,7 +82,11 @@ const FEATURE_LABELS: { key: keyof FeaturesData; label: string }[] = [
   { key: "wheelchairAccessible", label: "Accesible" },
 ];
 
-const SCORE_LABELS: { key: keyof Omit<ScoresData, "totalScore">; label: string; weight: string }[] = [
+const SCORE_LABELS: {
+  key: keyof Omit<ScoresData, "totalScore">;
+  label: string;
+  weight: string;
+}[] = [
   { key: "qualityScore", label: "Calidad", weight: "35%" },
   { key: "priceScore", label: "Precio", weight: "15%" },
   { key: "varietyScore", label: "Variedad", weight: "15%" },
@@ -130,13 +130,8 @@ export function ShopForm({
     <form action={action} className="space-y-10">
       {shop?.id && <input type="hidden" name="id" value={shop.id} />}
 
-      {error && (
-        <p className="text-sm text-error font-medium bg-error/5 rounded-xl px-4 py-3">
-          {error}
-        </p>
-      )}
+      {error && <p className="form-error">{error}</p>}
 
-      {/* Datos básicos */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Datos básicos
@@ -194,7 +189,7 @@ export function ShopForm({
                 type="checkbox"
                 name="isIndependent"
                 defaultChecked={shop?.isIndependent ?? true}
-                className="w-4 h-4 accent-primary"
+                className="form-checkbox"
               />
               Local independiente
             </label>
@@ -202,11 +197,8 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Ubicación */}
       <section>
-        <h2 className="text-lg font-bold text-on-background mb-6">
-          Ubicación
-        </h2>
+        <h2 className="text-lg font-bold text-on-background mb-6">Ubicación</h2>
         <div className="grid grid-cols-2 gap-6">
           <div className="col-span-2">
             <label htmlFor="address" className={labelClass}>
@@ -291,7 +283,6 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Enlaces */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Redes y web
@@ -339,7 +330,6 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Precios */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">Precios</h2>
         <div className="grid grid-cols-3 gap-6">
@@ -388,7 +378,6 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Contenido editorial */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Contenido editorial
@@ -404,7 +393,7 @@ export function ShopForm({
               rows={3}
               defaultValue={shop?.editorSummary ?? ""}
               placeholder="Breve valoración editorial del local..."
-              className={inputClass + " resize-none"}
+              className="form-textarea"
             />
           </div>
           <div>
@@ -417,7 +406,7 @@ export function ShopForm({
               rows={3}
               defaultValue={shop?.whyItStandsOut ?? ""}
               placeholder="Lo que hace especial a este local..."
-              className={inputClass + " resize-none"}
+              className="form-textarea"
             />
           </div>
           <div>
@@ -436,7 +425,6 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Features */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">
           Características
@@ -448,7 +436,7 @@ export function ShopForm({
                 type="checkbox"
                 name={key}
                 defaultChecked={features?.[key] ?? false}
-                className="w-4 h-4 accent-primary"
+                className="form-checkbox"
               />
               {label}
             </label>
@@ -456,7 +444,6 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Horarios */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-6">Horarios</h2>
         <div className="space-y-3">
@@ -482,12 +469,12 @@ export function ShopForm({
                   defaultValue={h?.closesAt ?? ""}
                   className={inputClass}
                 />
-                <label className="flex items-center gap-2 text-xs text-on-surface-variant cursor-pointer whitespace-nowrap">
+                <label className="form-inline-checkbox-label">
                   <input
                     type="checkbox"
                     name={`hours_${day}_closed`}
                     defaultChecked={h?.isClosed ?? false}
-                    className="w-4 h-4 accent-primary"
+                    className="form-checkbox"
                   />
                   Cerrado
                 </label>
@@ -497,13 +484,13 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Scores */}
       <section>
         <h2 className="text-lg font-bold text-on-background mb-2">
           Puntuaciones
         </h2>
         <p className="text-sm text-on-surface-variant mb-6">
-          Cada dimensión va de 0 a 100. La nota total se calcula automáticamente.
+          Cada dimensión va de 0 a 100. La nota total se calcula
+          automáticamente.
           {scores?.totalScore != null && (
             <span className="ml-2 font-semibold text-primary">
               Total actual: {scores.totalScore.toFixed(1)}
@@ -535,18 +522,11 @@ export function ShopForm({
         </div>
       </section>
 
-      {/* Actions */}
       <div className="flex items-center gap-4 pt-4">
-        <button
-          type="submit"
-          className="bg-primary text-on-primary rounded-full px-8 py-3 font-bold text-sm hover:opacity-90 transition-opacity"
-        >
+        <button type="submit" className="btn btn-primary btn-md">
           {submitLabel}
         </button>
-        <Link
-          href="/admin/shops"
-          className="text-sm font-semibold text-on-surface-variant hover:text-on-background transition-colors"
-        >
+        <Link href="/admin/shops" className="btn btn-subtle btn-sm">
           Cancelar
         </Link>
       </div>

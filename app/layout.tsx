@@ -1,21 +1,7 @@
 import type { Metadata } from "next";
-import { Noto_Serif, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/constants";
 import Navbar from "@/components/Navbar";
-
-const notoSerif = Noto_Serif({
-  variable: "--font-noto-serif",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -51,22 +37,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="es"
-      className={`${notoSerif.variable} ${plusJakartaSans.variable}`}
-    >
+    <html lang="es">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
-        {/* Plausible Analytics */}
         <script
           defer
           data-domain="bubbleteaespana.com"
           src="https://plausible.io/js/script.js"
-        />
-        {/* Google Search Console verification — replace content with actual code */}
+        ></script>
         {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
           <meta
             name="google-site-verification"
@@ -75,8 +52,14 @@ export default function RootLayout({
         )}
       </head>
       <body className="bg-surface text-on-surface antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-primary focus:px-5 focus:py-3 focus:text-sm focus:font-bold focus:text-on-primary focus:shadow-lg"
+        >
+          Saltar al contenido
+        </a>
         <Navbar />
-        {children}
+        <div id="main-content">{children}</div>
       </body>
     </html>
   );

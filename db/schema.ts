@@ -91,6 +91,8 @@ export const shops = pgTable(
     latitude: real("latitude"),
     longitude: real("longitude"),
     googleMapsUrl: text("google_maps_url"),
+    googleRating: real("google_rating"),
+    googleReviewCount: integer("google_review_count"),
     websiteUrl: text("website_url"),
     instagramUrl: text("instagram_url"),
     tiktokUrl: text("tiktok_url"),

@@ -1,21 +1,22 @@
 import Link from "next/link";
+import { count, desc } from "drizzle-orm";
+import Icon from "@/components/Icon";
 import { db } from "@/db";
 import { cities, shops } from "@/db/schema";
-import { eq, count, desc } from "drizzle-orm";
-import { publishCity, archiveCity, draftCity } from "./actions";
+import { archiveCity, draftCity, publishCity } from "./actions";
 
 const statusLabel: Record<string, { text: string; className: string }> = {
   draft: {
     text: "Borrador",
-    className: "bg-surface-container text-on-surface-variant",
+    className: "badge-neutral",
   },
   published: {
     text: "Publicada",
-    className: "bg-primary-container/30 text-primary",
+    className: "badge-primary",
   },
   archived: {
     text: "Archivada",
-    className: "bg-error/10 text-error",
+    className: "badge-danger",
   },
 };
 
@@ -32,7 +33,6 @@ export default async function CitiesPage() {
     .from(cities)
     .orderBy(desc(cities.updatedAt));
 
-  // Get shop counts per city
   const shopCounts = await db
     .select({ cityId: shops.cityId, count: count() })
     .from(shops)
@@ -44,13 +44,8 @@ export default async function CitiesPage() {
     <div className="min-h-screen bg-surface">
       <header className="bg-surface-container-lowest border-b border-surface-container-high px-8 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <Link
-            href="/admin"
-            className="text-on-surface-variant hover:text-on-background transition-colors"
-          >
-            <span className="material-symbols-outlined text-xl">
-              arrow_back
-            </span>
+          <Link href="/admin" className="btn btn-subtle btn-icon">
+            <Icon name="arrow_back" className="text-xl" />
           </Link>
           <span className="font-serif italic text-xl text-on-background">
             Bubble Tea España{" "}
@@ -59,11 +54,8 @@ export default async function CitiesPage() {
             </span>
           </span>
         </div>
-        <Link
-          href="/admin/cities/new"
-          className="inline-flex items-center gap-2 bg-primary text-on-primary rounded-full px-5 py-2.5 font-bold text-sm hover:opacity-90 transition-opacity"
-        >
-          <span className="material-symbols-outlined text-lg">add</span>
+        <Link href="/admin/cities/new" className="btn btn-primary btn-sm">
+          <Icon name="add" className="text-lg" />
           Nueva ciudad
         </Link>
       </header>
@@ -71,20 +63,15 @@ export default async function CitiesPage() {
       <main className="max-w-5xl mx-auto px-8 py-12">
         {allCities.length === 0 ? (
           <div className="text-center py-20">
-            <span
-              className="material-symbols-outlined text-5xl text-on-surface-variant/40 mb-4 block"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              location_city
-            </span>
+            <Icon
+              name="location_city"
+              className="text-5xl text-on-surface-variant/40 mb-4 block"
+            />
             <p className="text-on-surface-variant mb-6">
               Aún no hay ciudades. Empieza creando la primera.
             </p>
-            <Link
-              href="/admin/cities/new"
-              className="inline-flex items-center gap-2 bg-primary text-on-primary rounded-full px-5 py-2.5 font-bold text-sm hover:opacity-90 transition-opacity"
-            >
-              <span className="material-symbols-outlined text-lg">add</span>
+            <Link href="/admin/cities/new" className="btn btn-primary btn-sm">
+              <Icon name="add" className="text-lg" />
               Nueva ciudad
             </Link>
           </div>
@@ -96,7 +83,7 @@ export default async function CitiesPage() {
               return (
                 <div
                   key={city.id}
-                  className="bg-surface-container-lowest rounded-xl p-6 editorial-shadow flex items-center justify-between gap-6"
+                  className="card-elevated p-6 flex items-center justify-between gap-6"
                 >
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-1">
@@ -106,9 +93,7 @@ export default async function CitiesPage() {
                       >
                         {city.name}
                       </Link>
-                      <span
-                        className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${badge.className}`}
-                      >
+                      <span className={`badge ${badge.className}`}>
                         {badge.text}
                       </span>
                     </div>
@@ -123,10 +108,7 @@ export default async function CitiesPage() {
                     {city.status === "draft" && (
                       <form action={publishCity}>
                         <input type="hidden" name="id" value={city.id} />
-                        <button
-                          type="submit"
-                          className="text-xs font-semibold text-primary hover:opacity-70 transition-opacity px-3 py-1.5 rounded-lg hover:bg-primary/5"
-                        >
+                        <button type="submit" className="btn btn-primary btn-xs">
                           Publicar
                         </button>
                       </form>
@@ -134,10 +116,7 @@ export default async function CitiesPage() {
                     {city.status === "published" && (
                       <form action={archiveCity}>
                         <input type="hidden" name="id" value={city.id} />
-                        <button
-                          type="submit"
-                          className="text-xs font-semibold text-error hover:opacity-70 transition-opacity px-3 py-1.5 rounded-lg hover:bg-error/5"
-                        >
+                        <button type="submit" className="btn btn-danger btn-xs">
                           Archivar
                         </button>
                       </form>
@@ -145,17 +124,14 @@ export default async function CitiesPage() {
                     {city.status === "archived" && (
                       <form action={draftCity}>
                         <input type="hidden" name="id" value={city.id} />
-                        <button
-                          type="submit"
-                          className="text-xs font-semibold text-on-surface-variant hover:opacity-70 transition-opacity px-3 py-1.5 rounded-lg hover:bg-surface-container"
-                        >
+                        <button type="submit" className="btn btn-subtle btn-xs">
                           Restaurar
                         </button>
                       </form>
                     )}
                     <Link
                       href={`/admin/cities/${city.id}`}
-                      className="text-xs font-semibold text-on-surface-variant hover:text-on-background transition-colors px-3 py-1.5 rounded-lg hover:bg-surface-container"
+                      className="btn btn-subtle btn-xs"
                     >
                       Editar
                     </Link>

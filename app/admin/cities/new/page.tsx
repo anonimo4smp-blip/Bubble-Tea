@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { CityForm } from "../city-form";
+import Icon from "@/components/Icon";
 import { createCity } from "../actions";
+import { CityForm } from "../city-form";
 
 export default async function NewCityPage({
   searchParams,
@@ -12,11 +13,8 @@ export default async function NewCityPage({
   return (
     <div className="min-h-screen bg-surface">
       <header className="bg-surface-container-lowest border-b border-surface-container-high px-8 py-4 flex items-center gap-3">
-        <Link
-          href="/admin/cities"
-          className="text-on-surface-variant hover:text-on-background transition-colors"
-        >
-          <span className="material-symbols-outlined text-xl">arrow_back</span>
+        <Link href="/admin/cities" className="btn btn-subtle btn-icon">
+          <Icon name="arrow_back" className="text-xl" />
         </Link>
         <span className="font-serif italic text-xl text-on-background">
           Bubble Tea España{" "}

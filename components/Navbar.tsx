@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Icon from "@/components/Icon";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -24,6 +25,7 @@ function getScrollProgress(): number {
 function NavbarInner({ pathname }: { pathname: string }) {
   const isHome = pathname === "/";
   const [progress, setProgress] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     let raf = 0;
@@ -73,44 +75,75 @@ function NavbarInner({ pathname }: { pathname: string }) {
     borderRadius: `${9999 * inverseProgress}px`,
   };
 
+  const navLinks = [
+    { href: isHome ? "#ciudades" : "/#ciudades", label: "Explorar ciudades" },
+    { href: isHome ? "#ranking" : "/#ranking", label: "Rankings" },
+    { href: isHome ? "#editorial" : "/#editorial", label: "Sobre nosotros" },
+  ];
+
   return (
     <nav
+      aria-label="Navegación principal"
       className="fixed left-0 w-full z-50 transition-[top,padding-left,padding-right] duration-200 ease-out"
       style={navStyle}
     >
       <div
-        className="glass-nav flex items-center justify-between px-5 py-3 transition-[border-radius] duration-200 ease-out"
+        className="glass-nav transition-[border-radius] duration-200 ease-out"
         style={innerStyle}
       >
-        <div className="text-base font-black tracking-tighter text-primary shrink-0">
-          <Link href="/">Bubble Tea Espana</Link>
+        <div className="flex items-center justify-between px-5 py-3">
+          <div className="text-base font-black tracking-tighter text-primary shrink-0">
+            <Link href="/">Bubble Tea España</Link>
+          </div>
+          <div className="hidden md:flex gap-6 items-center text-xs font-semibold uppercase tracking-widest">
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-on-surface/50 hover:text-primary transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-2">
+            <Link
+              href={isHome ? "#ranking" : "/#ranking"}
+              className="btn btn-primary btn-xs shrink-0 hidden md:inline-flex"
+            >
+              Ver ranking
+            </Link>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="md:hidden flex items-center justify-center w-10 h-10 rounded-full text-on-surface/70 hover:text-primary transition-colors"
+              aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+            >
+              <Icon name={menuOpen ? "close" : "menu"} className="text-xl" />
+            </button>
+          </div>
         </div>
-        <div className="hidden md:flex gap-6 items-center text-xs font-semibold uppercase tracking-widest">
-          <Link
-            href={isHome ? "#ciudades" : "/#ciudades"}
-            className="text-on-surface/50 hover:text-primary transition-colors"
-          >
-            Explorar ciudades
-          </Link>
-          <Link
-            href={isHome ? "#ranking" : "/#ranking"}
-            className="text-on-surface/50 hover:text-primary transition-colors"
-          >
-            Rankings
-          </Link>
-          <Link
-            href={isHome ? "#editorial" : "/#editorial"}
-            className="text-on-surface/50 hover:text-primary transition-colors"
-          >
-            Sobre nosotros
-          </Link>
-        </div>
-        <button
-          type="button"
-          className="bg-primary text-on-primary px-5 py-2 rounded-full font-bold text-xs hover:scale-95 transition-all shrink-0"
-        >
-          Unete al club
-        </button>
+
+        {menuOpen && (
+          <div className="md:hidden px-5 pb-4 flex flex-col gap-3">
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="text-sm font-semibold uppercase tracking-widest text-on-surface/70 hover:text-primary transition-colors py-2"
+              >
+                {label}
+              </Link>
+            ))}
+            <Link
+              href={isHome ? "#ranking" : "/#ranking"}
+              onClick={() => setMenuOpen(false)}
+              className="btn btn-primary btn-sm text-center"
+            >
+              Ver ranking
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );

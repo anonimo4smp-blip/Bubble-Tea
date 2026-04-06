@@ -1,10 +1,16 @@
 import { sendMagicLink } from "./actions";
+import {
+  ADMIN_EMAIL_ALLOWLIST_ENV,
+  hasAdminEmailAllowlist,
+} from "@/lib/admin-auth";
 
 export default function LoginPage({
   searchParams,
 }: {
   searchParams: Promise<{ message?: string; error?: string }>;
 }) {
+  const isAdminConfigured = hasAdminEmailAllowlist();
+
   return (
     <div className="min-h-screen bg-surface flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
@@ -17,25 +23,34 @@ export default function LoginPage({
           </p>
         </div>
 
-        <div className="bg-surface-container-lowest rounded-2xl p-8 editorial-shadow">
+        <div className="card-elevated rounded-2xl p-8">
           <h2 className="text-xl font-bold text-on-background mb-2">
             Acceso editorial
           </h2>
           <p className="text-sm text-on-surface-variant mb-8">
-            Introduce tu email y te enviaremos un enlace de acceso instantáneo.
+            Introduce tu email autorizado y te enviaremos un enlace de acceso.
           </p>
+
+          {!isAdminConfigured && (
+            <p className="mb-6 text-sm text-error font-medium bg-error/5 rounded-xl px-4 py-3">
+              El acceso admin está desactivado hasta configurar{" "}
+              <code>{ADMIN_EMAIL_ALLOWLIST_ENV}</code>.
+            </p>
+          )}
 
           <form action={sendMagicLink} className="space-y-4">
             <input
               type="email"
               name="email"
               required
+              disabled={!isAdminConfigured}
               placeholder="tu@email.com"
-              className="w-full bg-surface-container-low rounded-xl px-4 py-3 text-sm text-on-background outline-none focus:ring-2 focus:ring-primary/30 placeholder:text-on-surface-variant/50"
+              className="form-control"
             />
             <button
               type="submit"
-              className="w-full bg-primary text-on-primary rounded-full py-3 font-bold text-sm hover:opacity-90 transition-opacity"
+              disabled={!isAdminConfigured}
+              className="btn btn-primary btn-md btn-block"
             >
               Enviar enlace de acceso
             </button>

@@ -1,95 +1,120 @@
+import Image from "next/image";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
-const cities = [
-  {
-    name: "Madrid",
-    count: "20 Locales",
-    description:
-      "Capital del bubble tea en Espana. Desde Malasana hasta Retiro, el epicentro de la innovacion en boba.",
-    href: "/madrid",
-    cta: "Ver bubble tea en Madrid",
+export type FeaturedCity = {
+  name: string;
+  slug: string;
+  count: number;
+  description: string;
+};
+
+type Props = {
+  cities?: FeaturedCity[];
+  headerLinkHref?: string;
+  headerLinkLabel?: string;
+  showHeaderLink?: boolean;
+};
+
+const cityVisuals: Record<
+  string,
+  { image: string; imageAlt: string; fallbackDescription: string }
+> = {
+  madrid: {
     image:
       "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&h=600&fit=crop&auto=format&q=80",
     imageAlt:
       "Gran Via de Madrid al atardecer con sus edificios historicos iluminados",
+    fallbackDescription:
+      "Capital del bubble tea en España, con una escena amplia entre Centro, Chamberí y Usera.",
   },
-  {
-    name: "Barcelona",
-    count: "20 Locales",
-    description:
-      "Fusion costera y diseno. El Gotico esconde los secretos mejores guardados de los maestros del te.",
-    href: "/barcelona",
-    cta: "Ver bubble tea en Barcelona",
+  barcelona: {
     image:
       "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&h=600&fit=crop&auto=format&q=80",
-    imageAlt: "Vista panoramica de Barcelona con la Sagrada Familia al fondo",
+    imageAlt:
+      "Vista panoramica de Barcelona con la Sagrada Familia al fondo",
+    fallbackDescription:
+      "Fusion costera y diseno entre Ciutat Vella, Eixample, Gracia y Sant Marti.",
   },
-  {
-    name: "Vigo",
-    count: "8 Locales",
-    description:
-      "La vanguardia gallega. Pequena pero intensa, una escena que sorprende por su calidad organica.",
-    href: "/vigo",
-    cta: "Ver bubble tea en Vigo",
+  vigo: {
     image:
       "https://images.unsplash.com/photo-1509840841025-9088ba78a826?w=800&h=600&fit=crop&auto=format&q=80",
     imageAlt: "Costa gallega con vistas al mar y vegetacion verde",
+    fallbackDescription:
+      "Escena pequena pero activa entre el centro de Vigo, Vialia y algunas cartas asiaticas especializadas.",
   },
-];
+};
 
-export default function FeaturedCities() {
+export default function FeaturedCities({
+  cities = [],
+  headerLinkHref = "/ciudades",
+  headerLinkLabel = "Ver todas las ciudades",
+  showHeaderLink = true,
+}: Props) {
+  const resolvedCities = cities.map((city) => {
+    const visual = cityVisuals[city.slug] ?? cityVisuals.vigo;
+    return {
+      ...city,
+      countLabel: `${city.count} Locales`,
+      description: city.description || visual.fallbackDescription,
+      href: `/${city.slug}`,
+      cta: `Ver bubble tea en ${city.name}`,
+      image: visual.image,
+      imageAlt: visual.imageAlt,
+    };
+  });
+
   return (
-    <section id="ciudades" className="py-24 px-6 bg-surface-container-low">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-end mb-16">
+    <section id="ciudades" className="bg-surface-container-low px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 flex items-end justify-between">
           <div>
-            <h2 className="text-4xl md:text-5xl font-serif text-on-background mb-4 italic">
+            <h2 className="section-title section-title-md mb-4 italic">
               Nuestros Destinos
             </h2>
-            <p className="text-on-surface-variant max-w-md">
+            <p className="section-copy max-w-md">
               Explora las capitales del te en la peninsula. Curacion constante y
               reportajes a pie de calle.
             </p>
           </div>
-          <div className="hidden md:block">
-            <span className="text-primary font-bold border-b-2 border-primary tracking-widest uppercase text-sm cursor-pointer">
-              Ver todos los mapas
-            </span>
-          </div>
+          {showHeaderLink ? (
+            <div className="hidden md:block">
+              <Link
+                href={headerLinkHref}
+                className="btn btn-subtle btn-xs uppercase tracking-widest"
+              >
+                {headerLinkLabel}
+              </Link>
+            </div>
+          ) : null}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {cities.map((city) => (
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {resolvedCities.map((city) => (
             <div
               key={city.name}
-              className="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
+              className="group relative overflow-hidden card-elevated-hover duration-500 hover:-translate-y-2"
             >
-              <div className="h-80 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="relative h-80 overflow-hidden">
+                <Image
                   src={city.image}
                   alt={city.imageAlt}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
                 />
               </div>
               <div className="p-8">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-serif">{city.name}</h3>
-                  <span className="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold">
-                    {city.count}
-                  </span>
+                <div className="mb-4 flex items-start justify-between gap-4">
+                  <h3 className="section-title text-2xl">{city.name}</h3>
+                  <span className="badge badge-accent">{city.countLabel}</span>
                 </div>
-                <p className="text-on-surface-variant mb-8 text-sm leading-relaxed">
-                  {city.description}
-                </p>
+                <p className="section-copy mb-8 text-sm">{city.description}</p>
                 <Link
                   href={city.href}
-                  className="inline-flex items-center gap-2 text-tertiary font-bold tracking-tight group-hover:gap-4 transition-all"
+                  className="inline-flex items-center gap-2 font-bold tracking-tight text-tertiary transition-all group-hover:gap-4"
                 >
-                  {city.cta}{" "}
-                  <span className="material-symbols-outlined text-sm">
-                    arrow_forward
-                  </span>
+                  {city.cta} <Icon name="arrow_forward" className="text-sm" />
                 </Link>
               </div>
             </div>

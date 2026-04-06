@@ -1,81 +1,76 @@
-const ranking = [
-  {
-    position: 1,
-    name: "Zen Tea Art",
-    location: "Malasaña, Madrid",
-    price: "€€",
-    tags: ["Vegano", "Para estudiar", "Bonito para fotos"],
-    badgeClass: "bg-primary text-on-primary",
-  },
-  {
-    position: 2,
-    name: "Boba Lab",
-    location: "Chueca, Madrid",
-    price: "€€€",
-    tags: ["Fruta Natural", "Minimalista"],
-    badgeClass: "bg-primary-container text-on-primary-container",
-  },
-  {
-    position: 3,
-    name: "Oasis Milk Bar",
-    location: "Salamanca, Madrid",
-    price: "€",
-    tags: ["Tradicional", "Take away"],
-    badgeClass: "bg-secondary-container text-on-secondary-container",
-  },
+import Link from "next/link";
+import Icon from "@/components/Icon";
+
+export type RankingPreviewItem = {
+  position: number;
+  name: string;
+  location: string | null;
+  priceLabel: string | null;
+  tags: string[];
+  href: string;
+};
+
+const badgeClasses = [
+  "bg-primary text-on-primary",
+  "bg-primary-container text-on-primary-container",
+  "bg-secondary-container text-on-secondary-container",
 ];
 
-export default function RankingPreview() {
+export default function RankingPreview({ items = [] }: { items?: RankingPreviewItem[] }) {
   return (
-    <section id="ranking" className="py-24 px-6 bg-surface">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-on-background mb-4">
+    <section id="ranking" className="bg-surface px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 text-center">
+          <h2 className="section-title section-title-md mb-4">
             El Olimpo del Boba: Madrid
           </h2>
-          <p className="text-on-surface-variant tracking-widest uppercase text-xs font-bold">
-            Actualizado: Enero 2025
+          <p className="section-kicker mb-0 text-on-surface-variant">
+            Actualizado: Abril 2026
           </p>
         </div>
 
         <div className="space-y-6">
-          {ranking.map((item) => (
-            <div
+          {items.map((item, index) => (
+            <Link
               key={item.position}
-              className="group bg-surface-container-low p-6 rounded-2xl flex flex-col md:flex-row items-center gap-8 hover:bg-surface-container transition-colors border border-outline-variant/10"
+              href={item.href}
+              className="group flex flex-col items-center gap-8 p-6 card-soft-lg-hover md:flex-row"
             >
               <div
-                className={`w-20 h-20 ${item.badgeClass} rounded-full flex items-center justify-center text-3xl font-serif shrink-0`}
+                className={`h-20 w-20 rounded-full ${badgeClasses[index] ?? badgeClasses[2]} flex shrink-0 items-center justify-center font-serif text-3xl`}
               >
                 {item.position}
               </div>
 
               <div className="flex-grow text-center md:text-left">
-                <div className="flex flex-col md:flex-row md:items-center gap-4 mb-2">
+                <div className="mb-2 flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
                   <h3 className="text-2xl font-bold text-on-background">
                     {item.name}
                   </h3>
-                  <span className="text-on-surface-variant text-sm font-medium">
-                    {item.location}
-                  </span>
-                  <span className="text-primary font-bold">{item.price}</span>
-                </div>
-                <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                  {item.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-surface-container-highest px-3 py-1 rounded-full text-[10px] font-bold tracking-tighter uppercase"
-                    >
-                      {tag}
+                  {item.location ? (
+                    <span className="text-sm font-medium text-on-surface-variant">
+                      {item.location}
                     </span>
-                  ))}
+                  ) : null}
+                  {item.priceLabel ? (
+                    <span className="font-bold text-primary">{item.priceLabel}</span>
+                  ) : null}
                 </div>
+                {item.tags.length > 0 ? (
+                  <div className="flex flex-wrap justify-center gap-2 md:justify-start">
+                    {item.tags.map((tag) => (
+                      <span key={tag} className="badge badge-neutral">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
               </div>
 
-              <button className="bg-surface-container-lowest p-4 rounded-full border border-outline-variant/20 group-hover:bg-primary group-hover:text-on-primary transition-all">
-                <span className="material-symbols-outlined">chevron_right</span>
-              </button>
-            </div>
+              <span className="btn btn-subtle btn-icon">
+                <Icon name="chevron_right" />
+              </span>
+            </Link>
           ))}
         </div>
       </div>

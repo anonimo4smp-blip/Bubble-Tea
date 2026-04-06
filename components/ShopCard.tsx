@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 type Props = {
   name: string;
@@ -19,6 +21,7 @@ type Props = {
   imageUrl: string | null;
   imageAlt: string | null;
   position?: number;
+  compareButton?: React.ReactNode;
 };
 
 const featureTags: { key: string; label: string }[] = [
@@ -32,9 +35,9 @@ const featureTags: { key: string; label: string }[] = [
 
 function priceLabel(avg: number | null): string {
   if (avg == null) return "";
-  if (avg <= 4) return "€";
-  if (avg <= 5.5) return "€€";
-  return "€€€";
+  if (avg <= 4) return "EUR";
+  if (avg <= 5.5) return "EUR EUR";
+  return "EUR EUR EUR";
 }
 
 export default function ShopCard({
@@ -49,6 +52,7 @@ export default function ShopCard({
   imageUrl,
   imageAlt,
   position,
+  compareButton,
 }: Props) {
   const tags = features
     ? featureTags.filter(({ key }) => (features as Record<string, boolean>)[key])
@@ -57,80 +61,72 @@ export default function ShopCard({
   return (
     <Link
       href={`/${citySlug}/${slug}`}
-      className="group bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow transition-all duration-300 hover:-translate-y-1 flex flex-col"
+      className="group card-elevated-hover flex flex-col overflow-hidden"
     >
-      {/* Image */}
       <div className="relative h-48 overflow-hidden bg-surface-container">
         {imageUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={imageUrl}
             alt={imageAlt ?? name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="material-symbols-outlined text-4xl text-on-surface-variant/30">
-              local_cafe
-            </span>
+          <div className="flex h-full w-full items-center justify-center">
+            <Icon
+              name="local_cafe"
+              className="text-4xl text-on-surface-variant/30"
+            />
           </div>
         )}
 
-        {/* Position badge */}
         {position != null && (
-          <div className="absolute top-3 left-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center text-lg font-serif font-bold">
+          <div className="absolute top-3 left-3 flex h-10 w-10 items-center justify-center rounded-full bg-primary font-serif text-lg font-bold text-on-primary">
             {position}
           </div>
         )}
 
-        {/* Score badge */}
         {totalScore != null && (
-          <div className="absolute top-3 right-3 bg-surface/80 glass-nav px-2.5 py-1 rounded-full">
-            <span className="text-xs font-bold text-primary">
-              {totalScore.toFixed(1)}
-            </span>
+          <div className="glass-nav badge badge-neutral absolute top-3 right-3 bg-surface/80">
+            <span className="text-primary">{totalScore.toFixed(1)}</span>
           </div>
         )}
+
+        {compareButton && <div className="absolute right-3 bottom-3">{compareButton}</div>}
       </div>
 
-      {/* Content */}
-      <div className="p-6 flex-1 flex flex-col">
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="text-lg font-bold text-on-background group-hover:text-primary transition-colors">
+      <div className="flex flex-1 flex-col p-6">
+        <div className="mb-2 flex items-start justify-between gap-2">
+          <h3 className="text-lg font-bold text-on-background transition-colors group-hover:text-primary">
             {name}
           </h3>
           {averagePrice != null && (
-            <span className="text-sm font-bold text-primary shrink-0">
+            <span className="shrink-0 text-sm font-bold text-primary">
               {priceLabel(averagePrice)}
             </span>
           )}
         </div>
 
         {neighborhood && (
-          <p className="text-xs text-on-surface-variant mb-3">{neighborhood}</p>
+          <p className="mb-3 text-xs text-on-surface-variant">{neighborhood}</p>
         )}
 
         {editorSummary && (
-          <p className="text-sm text-on-surface-variant leading-relaxed mb-4 line-clamp-2 flex-1">
+          <p className="mb-4 line-clamp-2 flex-1 text-sm leading-relaxed text-on-surface-variant">
             {editorSummary}
           </p>
         )}
 
-        {/* Tags */}
         {tags.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-auto">
+          <div className="mt-auto flex flex-wrap gap-1.5">
             {tags.slice(0, 3).map(({ key, label }) => (
-              <span
-                key={key}
-                className="bg-surface-container-highest px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-tight uppercase text-on-surface-variant"
-              >
+              <span key={key} className="badge badge-neutral">
                 {label}
               </span>
             ))}
             {tags.length > 3 && (
-              <span className="text-[10px] text-on-surface-variant font-semibold px-1">
-                +{tags.length - 3}
-              </span>
+              <span className="badge badge-neutral">+{tags.length - 3}</span>
             )}
           </div>
         )}

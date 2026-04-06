@@ -5,26 +5,20 @@ export default function FinalCTA() {
     <section className="py-32 px-6 text-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl md:text-7xl font-serif mb-12">
-          Donde empezamos hoy?
+          ¿Dónde empezamos hoy?
         </h2>
         <div className="flex flex-wrap justify-center gap-6">
-          <Link
-            href="/madrid"
-            className="px-10 py-5 bg-primary text-on-primary rounded-full font-bold text-lg hover:shadow-2xl transition-all"
-          >
+          <Link href="/madrid" className="btn btn-primary btn-lg">
             Explorar Madrid
           </Link>
-          <Link
-            href="/barcelona"
-            className="px-10 py-5 bg-secondary text-on-secondary rounded-full font-bold text-lg hover:shadow-2xl transition-all"
-          >
+          <Link href="/barcelona" className="btn btn-secondary btn-lg">
             Explorar Barcelona
           </Link>
           <Link
             href="/madrid/mejores-bubble-tea"
-            className="px-10 py-5 bg-on-background text-surface rounded-full font-bold text-lg hover:shadow-2xl transition-all"
+            className="btn btn-contrast btn-lg"
           >
-            Ver Ranking 2025
+            Ver ranking 2026
           </Link>
         </div>
       </div>

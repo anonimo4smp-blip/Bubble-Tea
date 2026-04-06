@@ -1,0 +1,3715 @@
+{
+  "generatedAt": "2026-04-05T17:36:13.015Z",
+  "cities": {
+    "madrid": [
+      {
+        "sourceUrls": [
+          "https://machitea.es/coco-fresh-tea--juice-madrid-madrid/"
+        ],
+        "name": "CoCo Fresh Tea & Juice",
+        "slug": "coco-fresh-tea-juice",
+        "brandName": "CoCo Bubble Tea",
+        "isIndependent": false,
+        "address": "C. Mayor, 30, Centro, 28013 Madrid",
+        "postalCode": "28013",
+        "neighborhood": "Centro",
+        "phone": "+34624632662",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CoCo%20Fresh%20Tea%20%26%20Juice%20CoCo%20Fresh%20Tea%20%26%20Juice%20C.%20Mayor%2C%2030%2C%20Centro%2C%2028013%20Madrid",
+        "latitude": 40.4162989,
+        "longitude": -3.7075178,
+        "rating": 4.9,
+        "reviewCount": 1075,
+        "editorSummary": "¡Bienvenidos al rincón más refrescante de Madrid! En CoCo Fresh Tea & Juice, cada sorbo es una aventura, perfecta para los apasionados del té de burbujas. Disfruta de un ambiente encantador mientras degustas nuestras bebidas favoritas o elige la comodidad de un servicio a domicilio para deleitarte en casa. Ven y descubre por qué nuestros clientes hablan maravillas de nosotros. Tu próxima experiencia de sabor inolvidable te espera aquí.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/CoCo-Fresh-Tea--Juice-Madrid-Madrid.jpg",
+        "imageAlt": "CoCo Fresh Tea & Juice en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/coco-bubble-tea-callao-madrid-madrid/"
+        ],
+        "name": "CoCo Bubble Tea (Callao)",
+        "slug": "coco-bubble-tea-callao",
+        "brandName": "CoCo Bubble Tea",
+        "isIndependent": false,
+        "address": "C. de Jacometrezo, 9, Centro, 28013 Madrid",
+        "postalCode": "28013",
+        "neighborhood": "Centro",
+        "phone": "+34642107507",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CoCo%20Bubble%20Tea%20(Callao)%20C.%20de%20Jacometrezo%2C%209%2C%20Centro%2C%2028013%20Madrid",
+        "latitude": 40.420104,
+        "longitude": -3.7070069,
+        "rating": 4.4,
+        "reviewCount": 813,
+        "editorSummary": "Déjese seducir por el encanto y el sabor único de CoCo Bubble Tea , donde cada sorbo es una aventura. Descubre tus sabores favoritos o atrévete a probar algo nuevo, ya sea en nuestro acogedor local en el corazón de Madrid o desde la comodidad de tu hogar. ¿A qué esperas para saborear la mejor experiencia en té de burbujas?",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/CoCo-Bubble-Tea-Callao-Madrid-Madrid.jpg",
+        "imageAlt": "CoCo Bubble Tea (Callao) en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 88
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/lecha-madrid-madrid/"
+        ],
+        "name": "乐茶Le.cha",
+        "slug": "lecha",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Centro, Madrid",
+        "postalCode": "28005",
+        "neighborhood": "C. de Toledo",
+        "phone": "+34611050860",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%90%E8%8C%B6Le.cha%20Centro%2C%20Madrid",
+        "latitude": 40.4140594,
+        "longitude": -3.7073732,
+        "rating": 4.9,
+        "reviewCount": 546,
+        "editorSummary": "Descubre un mundo de sabores con nuestro Bubble Tea en pleno corazón de Madrid . 乐茶Le.cha es el destino preferido por amantes del té de burbujas, gracias a su variada oferta y calidad excepcional . Con opciones para disfrutar en local o llevar a casa, te garantizamos una experiencia inolvidable y accesible . ¡Te esperamos para ofrecerte lo mejor del bubble tea!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Lecha-Madrid-Madrid.jpg",
+        "imageAlt": "乐茶Le.cha en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "17:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/coco-bubble-tea-fuencarral-madrid-madrid/"
+        ],
+        "name": "CoCo Bubble Tea (Fuencarral)",
+        "slug": "coco-bubble-tea-fuencarral",
+        "brandName": "CoCo Bubble Tea",
+        "isIndependent": false,
+        "address": "Calle de Fuencarral, Centro, 28004 Madrid",
+        "postalCode": "28004",
+        "neighborhood": "Calle de Fuencarral",
+        "phone": "+34614329135",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CoCo%20Bubble%20Tea%20(Fuencarral)%20Calle%20de%20Fuencarral%2C%20Centro%2C%2028004%20Madrid",
+        "latitude": 40.4218831,
+        "longitude": -3.7009642,
+        "rating": 4.8,
+        "reviewCount": 360,
+        "editorSummary": "Sumérgete en una experiencia única de Bubble Tea en CoCo Bubble Tea (Fuencarral), el destino favorito en Madrid para quienes buscan la auténtica frescura y sabor. Prueba nuestras deliciosas combinaciones de té y toppings, disponibles para disfrutarse tanto en el local como en la comodidad de tu hogar. ¡Déjate sorprender por nuestra amplia variedad de sabores en un ambiente acogedor!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/CoCo-Bubble-Tea-Fuencarral-Madrid-Madrid.jpg",
+        "imageAlt": "CoCo Bubble Tea (Fuencarral) en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "23:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 96
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/blue-blue-madrid-madrid/"
+        ],
+        "name": "Blue Blue",
+        "slug": "blue-blue",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Centro, Madrid",
+        "postalCode": "28012",
+        "neighborhood": "Pl. de Tirso de Molina",
+        "phone": "+34624627062",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Blue%20Centro%2C%20Madrid",
+        "latitude": 40.4120076,
+        "longitude": -3.7050304,
+        "rating": 4.6,
+        "reviewCount": 309,
+        "editorSummary": "¡Descubre Blue Blue , el paraíso del Té de Burbujas en pleno Madrid! Experimenta un ambiente acogedor con deliciosas bebidas y dulces exclusivos. Ya sea que elijas recoger tu orden, disfrutar en el local o recibirla en casa, nuestro servicio atento y opciones convenientes te esperan para brindar momentos inolvidables. ¡Visítanos en la Plaza de Tirso de Molina o pide tu Bubble Tea favorito a domicilio!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Blue-Blue-Madrid-Madrid.jpg",
+        "imageAlt": "Blue Blue en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": true,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/isweet-madrid-madrid/"
+        ],
+        "name": "iSweet",
+        "slug": "isweet",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. de Leganitos, 10, Centro, 28013 Madrid",
+        "postalCode": "28013",
+        "neighborhood": "Centro",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=iSweet%20C.%20de%20Leganitos%2C%2010%2C%20Centro%2C%2028013%20Madrid",
+        "latitude": 40.421423,
+        "longitude": -3.709849,
+        "rating": 4.5,
+        "reviewCount": 261,
+        "editorSummary": "Descubre el delicioso mundo de iSweet en Madrid, donde cada sorbo de nuestro té de burbujas es una invitación a la felicidad. Con un ambiente acogedor y precios accesibles, iSweet es tu refugio perfecto para disfrutar de tés exquisitos y formar parte de una comunidad inclusiva. ¡Visítanos y transforma una tarde cualquiera en una experiencia memorable!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/iSweet-Madrid-Madrid.jpg",
+        "imageAlt": "iSweet en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "14:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 90
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/asoma-te--madrid-madrid/"
+        ],
+        "name": "Asoma-Té 茶自在",
+        "slug": "asoma-te",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. de las Veneras, Centro, 28013 Madrid",
+        "postalCode": "28013",
+        "neighborhood": "C. de las Veneras",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Asoma-T%C3%A9%20%E8%8C%B6%E8%87%AA%E5%9C%A8%20C.%20de%20las%20Veneras%2C%20Centro%2C%2028013%20Madrid",
+        "latitude": 40.4194412,
+        "longitude": -3.7076752,
+        "rating": 4.9,
+        "reviewCount": 220,
+        "editorSummary": "Descubre Asoma-Té 茶自在 , el rincón perfecto en Madrid para vivir una experiencia de bubble tea inigualable. Saborea nuestras creaciones únicas, desde la comodidad de tu hogar o en nuestro local encantador. Con un alto índice de satisfacción del 4.9, te garantizamos momentos deliciosos y memorables. ¡Ven y sorpréndete con cada sorbo!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Asoma-Te--Madrid-Madrid.jpg",
+        "imageAlt": "Asoma-Té 茶自在 en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/chashier-bubble-tea-madrid-madrid-madrid/"
+        ],
+        "name": "Chashier Bubble Tea Madrid",
+        "slug": "chashier-bubble-tea-madrid",
+        "brandName": "Chashier Bubble Tea",
+        "isIndependent": false,
+        "address": "C. de Bravo Murillo, 41, Chamberí, 28015 Madrid",
+        "postalCode": "28015",
+        "neighborhood": "Chamberí",
+        "phone": "+34917820933",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chashier%20Bubble%20Tea%20Madrid%20C.%20de%20Bravo%20Murillo%2C%2041%2C%20Chamber%C3%AD%2C%2028015%20Madrid",
+        "latitude": 40.4374173,
+        "longitude": -3.7044565,
+        "rating": 4.9,
+        "reviewCount": 212,
+        "editorSummary": "¡Bienvenidos a Chashier Bubble Tea Madrid, el rincón perfecto para los verdaderos amantes del bubble tea! Descubre por qué tantos clientes nos han dado una puntuación casi perfecta. Ya sea que prefieras saborear tu bebida entre amigos en nuestro acogedor local o disfrutar de la comodidad de pedir a domicilio, todas nuestras opciones están hechas para satisfacer tus antojos. Sumérgete en un mundo de sabor con nuestras más de 30 bebidas personalizables y vive la experiencia única que solo nosotros podemos ofrecer. ¡Visítanos hoy en C. de Bravo Murillo, 41, o haz tu pedido en línea!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Chashier-Bubble-Tea-Madrid-Madrid-Madrid.jpg",
+        "imageAlt": "Chashier Bubble Tea Madrid en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/flora-tea-madrid-madrid/"
+        ],
+        "name": "FLORA TEA",
+        "slug": "flora-tea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Calle de Silva, 2, Centro, 28013 Madrid",
+        "postalCode": "28013",
+        "neighborhood": "Centro",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FLORA%20TEA%20Calle%20de%20Silva%2C%202%2C%20Centro%2C%2028013%20Madrid",
+        "latitude": 40.420364,
+        "longitude": -3.7080532,
+        "rating": 4.2,
+        "reviewCount": 158,
+        "editorSummary": "Descubre el placer del verdadero Bubble Tea en FLORA TEA , tu oasis en el corazón de Madrid. Con deliciosas opciones como el Té jazmín con fresa y el irresistible Milk tea de taro , cada visita es una experiencia única. Relájate en nuestro ambiente acogedor o lleva la magia de nuestros tés a casa. ¿Listo para saborear algo extraordinario?",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/FLORA-TEA-Madrid-Madrid.jpg",
+        "imageAlt": "FLORA TEA en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:00",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:00",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 84
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/machimachi-madrid-madrid-madrid/"
+        ],
+        "name": "MachiMachi-MADRID",
+        "slug": "machimachi-madrid",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. Mayor, 31, Centro, 28012 Madrid",
+        "postalCode": "28012",
+        "neighborhood": "Centro",
+        "phone": "+34911449859",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MachiMachi-MADRID%20C.%20Mayor%2C%2031%2C%20Centro%2C%2028012%20Madrid",
+        "latitude": 40.4160633,
+        "longitude": -3.707432,
+        "rating": 4.6,
+        "reviewCount": 154,
+        "editorSummary": "Descubre el paraíso del bubble tea en el corazón de Madrid. En MachiMachi-MADRID, cada sorbo es una aventura de sabor. Disfruta de nuestras creaciones únicas mientras te relajas en un ambiente acogedor. Con una atención al cliente excepcional y bebidas elaboradas con ingredientes de alta calidad, te garantizamos una experiencia inolvidable. ¡Ven a visitarnos o pide a domicilio y deléitate con el mejor bubble tea de la ciudad!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/MachiMachi-MADRID-Madrid-Madrid.jpg",
+        "imageAlt": "MachiMachi-MADRID en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/1-cup-coffee--bubble-tea-madrid-madrid/"
+        ],
+        "name": "1 CUP Coffee & Bubble Tea",
+        "slug": "1-cup-coffee-bubble-tea",
+        "brandName": "1 CUP Coffee & Bubble Tea",
+        "isIndependent": false,
+        "address": "Calle del Dr. Drumen, 7, Centro, 28012 Madrid",
+        "postalCode": "28012",
+        "neighborhood": "Centro",
+        "phone": "+34641494757",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=1%20CUP%20Coffee%20%26%20Bubble%20Tea%20Calle%20del%20Dr.%20Drumen%2C%207%2C%20Centro%2C%2028012%20Madrid",
+        "latitude": 40.4085415,
+        "longitude": -3.6931844,
+        "rating": 4.8,
+        "reviewCount": 130,
+        "editorSummary": "Sumérgete en un mundo de sabores únicos en el corazón de Madrid. 1 CUP Coffee & Bubble Tea no solo deleita con sus irresistibles bebidas como el bubble tea de uva y el espectacular maracuyá, sino que también sorprende con un ambiente acogedor y un servicio al cliente destacado. Disfruta de nuestras opciones en nuestra terraza al aire libre o pide tu bebida favorita a domicilio para saborear la calidad desde casa. ¡Ven a descubrir por qué nuestros clientes nos adoran!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/1-CUP-Coffee--Bubble-Tea-Madrid-Madrid.jpg",
+        "imageAlt": "1 CUP Coffee & Bubble Tea en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 96
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/momotta-madrid-madrid/"
+        ],
+        "name": "MOMOTTA",
+        "slug": "momotta",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. de Ortiz Campos, MOMOTTA, Usera, 28026 Madrid",
+        "postalCode": "28026",
+        "neighborhood": "C. de Ortiz Campos",
+        "phone": "+34688137373",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MOMOTTA%20C.%20de%20Ortiz%20Campos%2C%20MOMOTTA%2C%20Usera%2C%2028026%20Madrid",
+        "latitude": 40.3852933,
+        "longitude": -3.7067774,
+        "rating": 4.3,
+        "reviewCount": 116,
+        "editorSummary": "Sumérgete en un mundo de sabores con nuestro delicioso Té de Burbujas y exquisitas tartas artesanales en MOMOTTA, tu rincón preferido en Usera. Disfruta de una experiencia única en un ambiente acogedor con opciones para llevar o servicio a domicilio. No esperes más para deleitarte; estamos aquí para endulzar tus días.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/MOMOTTA-Madrid-Madrid.jpg",
+        "imageAlt": "MOMOTTA en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 86
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/mr-box-tea-madrid-madrid/"
+        ],
+        "name": "Mr. Box Tea",
+        "slug": "mr-box-tea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. de Altamirano, 3, Moncloa - Aravaca, 28008 Madrid",
+        "postalCode": "28008",
+        "neighborhood": "Moncloa - Aravaca",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mr.%20Box%20Tea%20C.%20de%20Altamirano%2C%203%2C%20Moncloa%20-%20Aravaca%2C%2028008%20Madrid",
+        "latitude": 40.4314443,
+        "longitude": -3.7173794,
+        "rating": 4.6,
+        "reviewCount": 77,
+        "editorSummary": "¡Ven a disfrutar del mejor bubble tea en el corazón de Madrid! En Mr. Box Tea, nos esforzamos por ofrecer una experiencia inolvidable con deliciosos sabores y un entorno acogedor. Con opciones de entrega rápida y un espacio inclusivo, tenemos algo especial para cada amante del té. Descubre por qué nuestros clientes nos eligen y haz de tu próxima bebida un pequeño placer en el día. ¡Te esperamos!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Mr-Box-Tea-Madrid-Madrid.jpg",
+        "imageAlt": "Mr. Box Tea en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:30",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/cassava-roots-madrid-madrid-madrid/"
+        ],
+        "name": "Cassava Roots Madrid",
+        "slug": "cassava-roots-madrid",
+        "brandName": "Cassava Roots",
+        "isIndependent": false,
+        "address": "C. de Barceló, 6, Planta 2, Local 311, Centro, 28004 Madrid",
+        "postalCode": "28004",
+        "neighborhood": "Centro",
+        "phone": "+34613501870",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cassava%20Roots%20Madrid%20C.%20de%20Barcel%C3%B3%2C%206%2C%20Planta%202%2C%20Local%20311%2C%20Centro%2C%2028004%20Madrid",
+        "latitude": 40.4267717,
+        "longitude": -3.6988569,
+        "rating": 4.7,
+        "reviewCount": 49,
+        "editorSummary": "¿Listo para una delicia única en el corazón de Madrid? Cassava Roots es el rincón perfecto para los apasionados del Bubble Tea . Disfruta de la comodidad que ofrecemos, ya sea que optes por llevarlo a casa o saborearlo en nuestro acogedor local. ¡Descubre tu sabor favorito y vive una experiencia irresistiblemente memorable!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Cassava-Roots-Madrid-Madrid-Madrid.jpg",
+        "imageAlt": "Cassava Roots Madrid en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:30",
+            "closesAt": "19:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:30",
+            "closesAt": "19:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:30",
+            "closesAt": "19:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:30",
+            "closesAt": "19:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 94
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/mr-orange-madrid-madrid/"
+        ],
+        "name": "Mr. Orange",
+        "slug": "mr-orange",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. de Amparo Usera, 46, Usera, 28026 Madrid",
+        "postalCode": "28026",
+        "neighborhood": "Usera",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mr.%20Orange%20C.%20de%20Amparo%20Usera%2C%2046%2C%20Usera%2C%2028026%20Madrid",
+        "latitude": 40.3872068,
+        "longitude": -3.7065272,
+        "rating": 3,
+        "reviewCount": 35,
+        "editorSummary": "¡Sumérgete en el mundo del Bubble Tea con Mr. Orange ! En el corazón de Usera, te ofrecemos una experiencia refrescante que se adapta a tu ritmo de vida. Elige entre recogida sin entrar, para llevar o disfrutar en nuestra acogedora tienda. Explora nuestra amplia variedad de sabores y descubre por qué somos el destino preferido de muchos. ¿Estás listo para tu próxima aventura de sabores? Visítanos o haz tu pedido en línea y disfruta del auténtico Té de Burbujas.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Mr-Orange-Madrid-Madrid.jpg",
+        "imageAlt": "Mr. Orange en Madrid",
+        "hours": [],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 60
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/h25-madrid-madrid/"
+        ],
+        "name": "H25",
+        "slug": "h25",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Moncloa - Aravaca, Madrid",
+        "postalCode": "28008",
+        "neighborhood": "C. de Quintana",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=H25%20Moncloa%20-%20Aravaca%2C%20Madrid",
+        "latitude": 40.457749,
+        "longitude": -3.7827941,
+        "rating": 4.8,
+        "reviewCount": 31,
+        "editorSummary": "Descubre el oasis de Bubble Tea en H25, donde la pasión por el sabor y la cultura se unen. Ubicado en el vibrante corazón de Madrid, H25 ofrece experiencias adaptadas a cada visitante. ¿Tienes antojo? Pide a domicilio o repósate en un ambiente encantador con toques únicos de K-pop. ¡Ven y desvela la magia que ha cautivado a tantos!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/H25-Madrid-Madrid.jpg",
+        "imageAlt": "H25 en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": true,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 96
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/boduo-training--madrid-madrid/"
+        ],
+        "name": "Boduo Training 博多实训",
+        "slug": "boduo-training",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Rda. de Valencia, Arganzuela, 28012 Madrid",
+        "postalCode": "28012",
+        "neighborhood": "Rda. de Valencia",
+        "phone": "+34623316900",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Boduo%20Training%20%E5%8D%9A%E5%A4%9A%E5%AE%9E%E8%AE%AD%20Rda.%20de%20Valencia%2C%20Arganzuela%2C%2028012%20Madrid",
+        "latitude": 40.4052665,
+        "longitude": -3.7011648,
+        "rating": 4.5,
+        "reviewCount": 30,
+        "editorSummary": "Descubre la magia del té de burbujas en Madrid en Boduo Training 博多实训 . Ubicado en el vibrante barrio de Arganzuela, ofrecemos una experiencia única con deliciosas combinaciones de sabores y un ambiente acogedor para todos. Disfruta de nuestra hospitalidad perfecta para la comunidad LGTBI+ y personaliza tu bebida favorita ya sea para llevar o disfrutar en nuestras instalaciones. Abiertos todos los días, estamos esperando para sorprenderte con nuestro té de burbujas fenomenal. ¡Visítanos o haz tu pedido a domicilio! Contacto: 623 31 69 00 .",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Boduo-Training--Madrid-Madrid.jpg",
+        "imageAlt": "Boduo Training 博多实训 en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 90
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/ines-madrid-madrid/"
+        ],
+        "name": "Ines茶饮店",
+        "slug": "ines",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "C. de Dolores Barranco, Usera, 28026 Madrid",
+        "postalCode": "28026",
+        "neighborhood": "C. de Dolores Barranco",
+        "phone": "+34625666698",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ines%E8%8C%B6%E9%A5%AE%E5%BA%97%20C.%20de%20Dolores%20Barranco%2C%20Usera%2C%2028026%20Madrid",
+        "latitude": 40.3834467,
+        "longitude": -3.7051003,
+        "rating": 5,
+        "reviewCount": 30,
+        "editorSummary": "Descubre el auténtico placer del té de burbujas en Ines茶饮店, donde cada sorbo es una experiencia única. Ubicado en el corazón de Usera, Madrid, nuestro salón de té es un destino imperdible para los amantes de bubble tea , con una oferta rica en variedad y calidad. Relájate en un ambiente acogedor mientras disfrutas de las recomendaciones de clientes entusiastas y del destacable servicio que ofrecemos. Ya sea que elijas pasar a visitarnos o prefieras nuestra opción de té a domicilio, te prometemos un deleite para tus sentidos.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Ines-Madrid-Madrid.jpg",
+        "imageAlt": "Ines茶饮店 en Madrid",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 100
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/chajion-madrid-madrid/"
+        ],
+        "name": "Chajion",
+        "slug": "chajion",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Centro, Madrid",
+        "postalCode": "28013",
+        "neighborhood": "C. de la Salud",
+        "phone": "+34915355656",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chajion%20Centro%2C%20Madrid",
+        "latitude": 40.4196574,
+        "longitude": -3.7031423,
+        "rating": 5,
+        "reviewCount": 4,
+        "editorSummary": "Disfruta del auténtico sabor del té de burbujas en Chajion, el destino favorito en Madrid. Con una ubicación ideal en el centro, nuestro té está hecho con amor y calidad que encantan a los visitantes. Descubre una amplia variedad de sabores y consulta nuestro horario llamándonos al 915 35 56 56 . ¡Esperamos verte pronto!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Chajion-Madrid-Madrid.jpg",
+        "imageAlt": "Chajion en Madrid",
+        "hours": [],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 100
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/cassava-roots-madrid-madrid/"
+        ],
+        "name": "Cassava Roots",
+        "slug": "cassava-roots",
+        "brandName": "Cassava Roots",
+        "isIndependent": false,
+        "address": "Pl. de Prta Cerrada, 6, Centro, Centro, 28005 Madrid",
+        "postalCode": "28005",
+        "neighborhood": "Centro",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cassava%20Roots%20Pl.%20de%20Prta%20Cerrada%2C%206%2C%20Centro%2C%20Centro%2C%2028005%20Madrid",
+        "latitude": 40.4136401,
+        "longitude": -3.7086123,
+        "rating": 3,
+        "reviewCount": 2,
+        "editorSummary": "En el vibrante corazón de Madrid, Cassava Roots se posiciona como el destino perfecto para los que buscan una experiencia inigualable en té de burbujas. Sumérgete en nuestra amplia y deliciosa selección, preparada con los ingredientes más frescos. Disfruta de un ambiente acogedor mientras nuestro amable equipo te ayuda a descubrir tu sabor favorito. ¡Ven y vive el sabor de la innovación!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Cassava-Roots-Madrid-Madrid.jpg",
+        "imageAlt": "Cassava Roots en Madrid",
+        "hours": [],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 60
+      }
+    ],
+    "barcelona": [
+      {
+        "sourceUrls": [
+          "https://machitea.es/zenzoo-barcelona-barcelona/"
+        ],
+        "name": "Zenzoo",
+        "slug": "zenzoo",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer del Bonsuccés, 6, Ciutat Vella, 08001 Barcelona",
+        "postalCode": "08001",
+        "neighborhood": "Ciutat Vella",
+        "phone": "+34933019167",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zenzoo%20Carrer%20del%20Bonsucc%C3%A9s%2C%206%2C%20Ciutat%20Vella%2C%2008001%20Barcelona",
+        "latitude": 41.3843336,
+        "longitude": 2.1701523,
+        "rating": 4.4,
+        "reviewCount": 2435,
+        "editorSummary": "Descubre la experiencia única del té de burbujas en Zenzoo, Barcelona. Disfruta de una amplia gama de sabores y opciones de servicio que se adaptan a tu estilo de vida. Con un ambiente acogedor y un acceso fácil tanto en tienda como a domicilio, te garantizamos una experiencia refrescante y memorable. Visítanos o pide desde la comodidad de tu hogar. ¡El sabor de Zenzoo te espera!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Zenzoo-Barcelona-Barcelona.jpg",
+        "imageAlt": "Zenzoo en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 88
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/bubbolitas---bubble-tea-bar---barcelona-raval-barcelona-barcelona/"
+        ],
+        "name": "Bubbolitas - Bubble Tea Bar - Barcelona Raval",
+        "slug": "bubbolitas-bubble-tea-bar-barcelona-raval",
+        "brandName": "Bubbolitas",
+        "isIndependent": false,
+        "address": "Plaça del Bonsuccés, 7, Ciutat Vella, 08001 Barcelona",
+        "postalCode": "08001",
+        "neighborhood": "Ciutat Vella",
+        "phone": "+34624621266",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bubbolitas%20-%20Bubble%20Tea%20Bar%20-%20Barcelona%20Raval%20Pla%C3%A7a%20del%20Bonsucc%C3%A9s%2C%207%2C%20Ciutat%20Vella%2C%2008001%20Barcelona",
+        "latitude": 41.3839943,
+        "longitude": 2.1698839,
+        "rating": 4.4,
+        "reviewCount": 2150,
+        "editorSummary": "Descubre una experiencia única en el corazón de Barcelona con Bubbolitas, donde el té de burbujas se transforma en un placer irresistible. Ya sea que prefieras disfrutarlo en un ambiente acogedor o desde la comodidad de tu hogar, nuestras opciones de servicio a domicilio y para llevar garantizan que estés siempre cerca de un sorbo de felicidad. ¡Ven a deleitarte con nuestras exclusivas creaciones y el servicio excepcional que nos caracteriza!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Bubbolitas---Bubble-Tea-Bar---Barcelona-Raval-Barcelona-Barcelona.jpg",
+        "imageAlt": "Bubbolitas - Bubble Tea Bar - Barcelona Raval en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "10:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 88
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/buscate-te-de-burbujas-barcelona-barcelona/"
+        ],
+        "name": "Buscaté Té de burbujas",
+        "slug": "buscate-te-de-burbujas",
+        "brandName": "Buscaté",
+        "isIndependent": false,
+        "address": "Carrer de Pau Claris, 117, 08009, Barcelona",
+        "postalCode": "08009",
+        "neighborhood": "117",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Buscat%C3%A9%20T%C3%A9%20de%20burbujas%20Carrer%20de%20Pau%20Claris%2C%20117%2C%2008009%2C%20Barcelona",
+        "latitude": 41.3920682,
+        "longitude": 2.1677646,
+        "rating": 4.6,
+        "reviewCount": 1115,
+        "editorSummary": "Descubre el encanto de Buscaté, el destino perfecto para los amantes del Bubble tea en Barcelona. Con opciones personalizables y un ambiente acogedor , te invitamos a disfrutar de una experiencia única. Aprovecha nuestras prácticas opciones de recogida y entrega, y déjate sorprender por nuestro variado menú que satisface todos los gustos. ¡No esperes más para probar el mejor té de burbujas de la ciudad! Visita nuestra página web para más información.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Buscate-Te-de-burbujas-Barcelona-Barcelona.jpg",
+        "imageAlt": "Buscaté Té de burbujas en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/bunter-panda-bubble-tea--dim-sum--barcelona-barcelona/"
+        ],
+        "name": "Bunter Panda Bubble Tea & Dim Sum 奶茶店",
+        "slug": "bunter-panda-bubble-tea-dim-sum",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer de la Marina, 269, Eixample, 08025 Barcelona",
+        "postalCode": "08025",
+        "neighborhood": "Eixample",
+        "phone": "+34608527818",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bunter%20Panda%20Bubble%20Tea%20%26%20Dim%20Sum%20%E5%A5%B6%E8%8C%B6%E5%BA%97%20Carrer%20de%20la%20Marina%2C%20269%2C%20Eixample%2C%2008025%20Barcelona",
+        "latitude": 41.4050327,
+        "longitude": 2.1735822,
+        "rating": 4.9,
+        "reviewCount": 1037,
+        "editorSummary": "Descubre un mundo lleno de sabor en Bunter Panda Bubble Tea & Dim Sum, donde cada sorbo de nuestro exquisito té de burbujas te lleva a una experiencia única en Barcelona. Con servicios como entrega sin contacto y a domicilio , garantizamos comodidad y satisfacción en cada visita o pedido. No esperes más para disfrutar de nuestras opciones deliciosas y una decoración encantadora que invita a relajarse. ¡Visítanos o pide ahora y sumérgete en el fabuloso mundo del bubble tea!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Bunter-Panda-Bubble-Tea--Dim-Sum--Barcelona-Barcelona.jpg",
+        "imageAlt": "Bunter Panda Bubble Tea & Dim Sum 奶茶店 en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "10:45",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/t4-bubble-tea-bcn-barcelona-barcelona/"
+        ],
+        "name": "T4 BUBBLE TEA BCN",
+        "slug": "t4-bubble-tea-bcn",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer Comtal, 28, Ciutat Vella, 08002 Barcelona",
+        "postalCode": "08002",
+        "neighborhood": "Ciutat Vella",
+        "phone": "+34936222844",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=T4%20BUBBLE%20TEA%20BCN%20Carrer%20Comtal%2C%2028%2C%20Ciutat%20Vella%2C%2008002%20Barcelona",
+        "latitude": 41.3866438,
+        "longitude": 2.1738437,
+        "rating": 4.6,
+        "reviewCount": 766,
+        "editorSummary": "¿Estás buscando un lugar donde la diversión nunca termine? Nuestro parque para niños con piscinas de pelotas es el destino perfecto para tus pequeños aventureros. Con un ambiente seguro, lleno de color y risas, ofrecemos un espacio donde los niños pueden liberar su energía y creatividad mientras se sumergen en un océano de bolas multicolores. ¡Ven a conocernos y descubre el lugar donde los niños crean recuerdos inolvidables mientras tú disfrutas de un tranquilo café en nuestra zona para padres!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/T4-BUBBLE-TEA-BCN-Barcelona-Barcelona.jpg",
+        "imageAlt": "T4 BUBBLE TEA BCN en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": true,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/qtea-barcelona-barcelona/"
+        ],
+        "name": "QTea",
+        "slug": "qtea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Pg. de St. Joan, 44, Eixample, 08010 Barcelona",
+        "postalCode": "08010",
+        "neighborhood": "Eixample",
+        "phone": "+34931302088",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=QTea%20Pg.%20de%20St.%20Joan%2C%2044%2C%20Eixample%2C%2008010%20Barcelona",
+        "latitude": 41.3937358,
+        "longitude": 2.1775887,
+        "rating": 4.6,
+        "reviewCount": 705,
+        "editorSummary": "QTea te invita a explorar el mundo del auténtico Bubble Tea en el corazón de Barcelona. Disfruta de una experiencia inigualable con un menú lleno de sabores vibrantes y personalizables. Ya sea que prefieras disfrutarlo en su acogedor local o llevarlo a casa, la calidad y la atención al detalle están garantizadas. ¡Haz de tu próximo antojo de té de burbujas una experiencia única en QTea !",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/QTea-Barcelona-Barcelona.jpg",
+        "imageAlt": "QTea en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/bubble-piggy-bubble-tea--souffle-barcelona-barcelona/"
+        ],
+        "name": "Bubble Piggy Bubble tea & Soufflé",
+        "slug": "bubble-piggy-bubble-tea-souffle",
+        "brandName": "Bubble Piggy",
+        "isIndependent": false,
+        "address": "Carrer dels Tallers, 27, Ciutat Vella, 08001 Barcelona",
+        "postalCode": "08001",
+        "neighborhood": "Ciutat Vella",
+        "phone": "+34654078872",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bubble%20Piggy%20Bubble%20tea%20%26%20Souffl%C3%A9%20Carrer%20dels%20Tallers%2C%2027%2C%20Ciutat%20Vella%2C%2008001%20Barcelona",
+        "latitude": 41.384684,
+        "longitude": 2.1687985,
+        "rating": 4.9,
+        "reviewCount": 635,
+        "editorSummary": "¿Eres amante del Bubble Tea? En Bubble Piggy Bubble tea & Soufflé , sentirás la magia en cada sorbo. Ubicado en el corazón de Barcelona, este encantador local es famoso por su exquisita variedad de tés de burbujas y su ambiente acogedor. Disfruta de nuestras bebidas únicas en un entorno original mientras te relajas jugando o conversando con amigos. Perfecto para cualquier ocasión, ya sea en su espacio temático o desde la comodidad de tu hogar gracias a nuestros servicios de entrega a domicilio. ¡Ven y experimenta el Bubble Tea como nunca antes!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Bubble-Piggy-Bubble-tea--Souffle-Barcelona-Barcelona.jpg",
+        "imageAlt": "Bubble Piggy Bubble tea & Soufflé en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "16:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/chinese-tofu-magician-barcelona-barcelona/"
+        ],
+        "name": "Chinese Tofu Magician",
+        "slug": "chinese-tofu-magician",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer del Consell de Cent, 391, Eixample, 08009 Barcelona",
+        "postalCode": "08009",
+        "neighborhood": "Eixample",
+        "phone": "+34688002595",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chinese%20Tofu%20Magician%20Carrer%20del%20Consell%20de%20Cent%2C%20391%2C%20Eixample%2C%2008009%20Barcelona",
+        "latitude": 41.3946119,
+        "longitude": 2.1701983,
+        "rating": 4.7,
+        "reviewCount": 623,
+        "editorSummary": "¿Eres amante del té de burbujas y buscas una experiencia única en Barcelona? Descubre Chinese Tofu Magician y su amplia gama de sabores asiáticos que deleitan tanto a locales como a visitantes. Con opciones para disfrutar en el acogedor local o en la comodidad de tu hogar gracias a su servicio a domicilio , este es el lugar ideal para saborear algo diferente. Visítanos en Eixample y entiende por qué nuestros clientes valoran tanto la calidad como el servicio.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Chinese-Tofu-Magician-Barcelona-Barcelona.jpg",
+        "imageAlt": "Chinese Tofu Magician en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": true,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 94
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/buscate-bubble-tea-barcelona-barcelona/"
+        ],
+        "name": "Buscaté Bubble Tea",
+        "slug": "buscate-bubble-tea",
+        "brandName": "Buscaté",
+        "isIndependent": false,
+        "address": "Carrer dels Tallers, 35, Ciutat Vella, 08001 Barcelona",
+        "postalCode": "08001",
+        "neighborhood": "Ciutat Vella",
+        "phone": "+34663373739",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Buscat%C3%A9%20Bubble%20Tea%20Carrer%20dels%20Tallers%2C%2035%2C%20Ciutat%20Vella%2C%2008001%20Barcelona",
+        "latitude": 41.3847959,
+        "longitude": 2.1684769,
+        "rating": 4.9,
+        "reviewCount": 484,
+        "editorSummary": "¡Ven a descubrir la experiencia única de Buscaté Bubble Tea! En el vibrante corazón de Barcelona, te esperamos con una deliciosa variedad de sabores y un ambiente inclusivo que encantará a todos. Disfruta de nuestro té excepcional en el local o llévatelo a casa. Contamos con opciones accesibles para todos y un ambiente acogedor que hará de tu visita un momento inolvidable. ¡No esperes más para probar el mejor té de burbujas de la ciudad!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Buscate-Bubble-Tea-Barcelona-Barcelona.jpg",
+        "imageAlt": "Buscaté Bubble Tea en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/coco-bubble-tea-gracia-barcelona-barcelona/"
+        ],
+        "name": "CoCo Bubble Tea Gracia",
+        "slug": "coco-bubble-tea-gracia",
+        "brandName": "CoCo Bubble Tea",
+        "isIndependent": false,
+        "address": "Carrer Gran de Gràcia, 172, Gracia, 08012 Barcelona",
+        "postalCode": "08012",
+        "neighborhood": "Gracia",
+        "phone": "+34689018029",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CoCo%20Bubble%20Tea%20Gracia%20Carrer%20Gran%20de%20Gr%C3%A0cia%2C%20172%2C%20Gracia%2C%2008012%20Barcelona",
+        "latitude": 41.4026899,
+        "longitude": 2.1525825,
+        "rating": 4.9,
+        "reviewCount": 435,
+        "editorSummary": "¡Descubre la experiencia única de CoCo Bubble Tea Gracia en Barcelona! Con deliciosas opciones personalizables y un servicio increíblemente acogedor, tu próxima aventura de té de burbujas te espera. Ya sea que prefieras llevar tu bebida mientras exploras o disfrutarla desde la comodidad de tu hogar, ¡tenemos todo lo que necesitas! Pide ahora y déjate encantar por nuestros sabores auténticos.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/CoCo-Bubble-Tea-Gracia-Barcelona-Barcelona.jpg",
+        "imageAlt": "CoCo Bubble Tea Gracia en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/bubbtea-wrap-barcelona-barcelona/"
+        ],
+        "name": "Bubbtea wrap",
+        "slug": "bubbtea-wrap",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer dels Tallers, 80, Ciutat Vella, 08001 Barcelona",
+        "postalCode": "08001",
+        "neighborhood": "Ciutat Vella",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bubbtea%20wrap%20Carrer%20dels%20Tallers%2C%2080%2C%20Ciutat%20Vella%2C%2008001%20Barcelona",
+        "latitude": 41.3852434,
+        "longitude": 2.1646818,
+        "rating": 4.2,
+        "reviewCount": 408,
+        "editorSummary": "Descubre el mundo del sabor en Bubbtea wrap, donde el té de burbujas cobra vida en combinaciones únicas y postres irresistibles. Perfecto para disfrutar en el local, llevar o recibir a domicilio. Ubicados en el corazón de Barcelona, cada visita es una aventura culinaria digna de compartir. Atrévete a probar, ¡te encantará!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Bubbtea-wrap-Barcelona-Barcelona.jpg",
+        "imageAlt": "Bubbtea wrap en Barcelona",
+        "hours": [],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 84
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/youcha-barcelona-barcelona/"
+        ],
+        "name": "Youcha",
+        "slug": "youcha",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer d'Alí Bei, 44, 08013, Barcelona",
+        "postalCode": "08013",
+        "neighborhood": "44",
+        "phone": "+34666697477",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Youcha%20Carrer%20d'Al%C3%AD%20Bei%2C%2044%2C%2008013%2C%20Barcelona",
+        "latitude": 41.393571,
+        "longitude": 2.181011,
+        "rating": 4.1,
+        "reviewCount": 279,
+        "editorSummary": "Descubre Youcha, el lugar perfecto para los amantes del Bubble Tea en Barcelona. Saborea la variedad única de sabores que ofrecemos, desde los clásicos hasta los más creativos, en un entorno que valora la atención al cliente y la calidad . Disfruta de la comodidad de nuestros servicios de recogida y entrega a domicilio . ¡Haz de cada sorbo una experiencia inolvidable!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Youcha-Barcelona-Barcelona.jpg",
+        "imageAlt": "Youcha en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:30",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 82
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/18ctea-barcelona-barcelona/"
+        ],
+        "name": "18CTEA",
+        "slug": "18ctea",
+        "brandName": "18CTEA",
+        "isIndependent": false,
+        "address": "Carrer dels Tallers, 81, Ciutat Vella, 08001 Barcelona",
+        "postalCode": "08001",
+        "neighborhood": "Ciutat Vella",
+        "phone": "+34667968668",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=18CTEA%20Carrer%20dels%20Tallers%2C%2081%2C%20Ciutat%20Vella%2C%2008001%20Barcelona",
+        "latitude": 41.3851804,
+        "longitude": 2.1642873,
+        "rating": 4.6,
+        "reviewCount": 268,
+        "editorSummary": "Descubre un rincón acogedor en el corazón de Barcelona donde la diversidad se celebra y el sabor del auténtico bubble tea te sorprende. En 18CTEA, cada visita es una experiencia inigualable, con opciones para todos los gustos y necesidades. ¡Te esperamos con los brazos abiertos y tu té de burbujas favorito!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/18CTEA-Barcelona-Barcelona.jpg",
+        "imageAlt": "18CTEA en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 92
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/charlies-tea-barcelona-barcelona/"
+        ],
+        "name": "Charlie's Tea",
+        "slug": "charlies-tea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer de la Diputació, 256, Eixample, 08007 Barcelona",
+        "postalCode": "08007",
+        "neighborhood": "Eixample",
+        "phone": "+34935645823",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Charlie's%20Tea%20Carrer%20de%20la%20Diputaci%C3%B3%2C%20256%2C%20Eixample%2C%2008007%20Barcelona",
+        "latitude": 41.3899327,
+        "longitude": 2.1665926,
+        "rating": 4.8,
+        "reviewCount": 210,
+        "editorSummary": "Descubre el sabor único de Charlie's Tea , donde cada sorbo te transporta a un mundo de frescura y calidad. Ya sea que lo disfrutes en nuestro encantador local o cómodamente en casa gracias a nuestra entrega a domicilio, te garantizamos una experiencia inesperada con cada taza. Explora nuestras irresistibles opciones de Bubble Tea y únete a quienes ya nos consideran su lugar favorito en Barcelona. ¡Haz tu pedido hoy y déjate sorprender por el mejor té de burbujas de la ciudad!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Charlies-Tea-Barcelona-Barcelona.jpg",
+        "imageAlt": "Charlie's Tea en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "10:30",
+            "closesAt": "22:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 96
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/sweetea-bubble-tea-barcelona-barcelona/"
+        ],
+        "name": "SWEETEA BUBBLE TEA",
+        "slug": "sweetea-bubble-tea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Ciutat Vella, Barcelona",
+        "postalCode": "08003",
+        "neighborhood": "Carrer del Judici",
+        "phone": "+34936272852",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SWEETEA%20BUBBLE%20TEA%20Ciutat%20Vella%2C%20Barcelona",
+        "latitude": 41.3765194,
+        "longitude": 2.189688,
+        "rating": 4.9,
+        "reviewCount": 116,
+        "editorSummary": "¡Bienvenidos a SWEETEA BUBBLE TEA , el refugio perfecto para los entusiastas del bubble tea en Barcelona! Ubicados estratégicamente en el vibrante barrio de Ciutat Vella , ofrecemos una experiencia única con deliciosas bebidas llenas de sabor y un servicio excepcional. Tanto si deseas relajarte en nuestro acogedor local como si prefieres disfrutar de tu bebida en casa, te ofrecemos el mejor service ya sea a domicilio o para llevar. ¡Sumérgete en una ola de sabores irresistibles y descubre por qué somos la elección preferida por nuestros clientes!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/SWEETEA-BUBBLE-TEA-Barcelona-Barcelona.jpg",
+        "imageAlt": "SWEETEA BUBBLE TEA en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "13:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "21:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/velvet-boba-barcelona-barcelona/"
+        ],
+        "name": "Velvet Boba",
+        "slug": "velvet-boba",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Travessera de les Corts, 259, Distrito de Les Corts, 08028 Barcelona",
+        "postalCode": "08028",
+        "neighborhood": "Distrito de Les Corts",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Velvet%20Boba%20Travessera%20de%20les%20Corts%2C%20259%2C%20Distrito%20de%20Les%20Corts%2C%2008028%20Barcelona",
+        "latitude": 41.3854945,
+        "longitude": 2.1325615,
+        "rating": 4.9,
+        "reviewCount": 108,
+        "editorSummary": "Descubre el paraíso del Bubble Tea en Velvet Boba, el destino favorito en Les Corts. Con una calificación sobresaliente de 4.9/5 , ofrecemos un ambiente acogedor y una variedad de sabores irresistibles. Visítanos para disfrutar del mejor té de burbujas o pídelo a domicilio; estamos comprometidos a brindarte una experiencia cálida y personalizada que te hará querer volver una y otra vez.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Velvet-Boba-Barcelona-Barcelona.jpg",
+        "imageAlt": "Velvet Boba en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "16:30",
+            "closesAt": "20:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 98
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/chawoo-barcelona-barcelona/"
+        ],
+        "name": "CHAWOO霓裳茶舞",
+        "slug": "chawoo",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Gran Via de les Corts Catalanes, Eixample, 08010 Barcelona",
+        "postalCode": "08010",
+        "neighborhood": "Gran Via de les Corts Catalanes",
+        "phone": "+34608686635",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CHAWOO%E9%9C%93%E8%A3%B3%E8%8C%B6%E8%88%9E%20Gran%20Via%20de%20les%20Corts%20Catalanes%2C%20Eixample%2C%2008010%20Barcelona",
+        "latitude": 41.3921855,
+        "longitude": 2.1716152,
+        "rating": 4.8,
+        "reviewCount": 89,
+        "editorSummary": "Descubre una explosión de sabores en CHAWOO霓裳茶舞 , tu destino favorito para el té de burbujas perfecto en el centro de Barcelona. Disfruta de nuestro variado menú en la comodidad de tu hogar con nuestro eficiente servicio a domicilio, o hazlo sin contacto con 'Recogida sin entrar'. Con un ambiente acogedor y una decoración instagrameable, cada visita es una delicia visual y de sabor. ¡No te pierdas la oportunidad de disfrutar de una experiencia de té verdaderamente única!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/CHAWOO-Barcelona-Barcelona.jpg",
+        "imageAlt": "CHAWOO霓裳茶舞 en Barcelona",
+        "hours": [],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": true,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 96
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/bubbolitas---bubble-tea-bar---barcelona-clot-barcelona-barcelona/"
+        ],
+        "name": "Bubbolitas - Bubble Tea Bar - Barcelona Clot",
+        "slug": "bubbolitas-bubble-tea-bar-barcelona-clot",
+        "brandName": "Bubbolitas",
+        "isIndependent": false,
+        "address": "Carrer de Rogent, 51, Sant Martí, 08026 Barcelona",
+        "postalCode": "08026",
+        "neighborhood": "Sant Martí",
+        "phone": "+34936940409",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bubbolitas%20-%20Bubble%20Tea%20Bar%20-%20Barcelona%20Clot%20Carrer%20de%20Rogent%2C%2051%2C%20Sant%20Mart%C3%AD%2C%2008026%20Barcelona",
+        "latitude": 41.4103785,
+        "longitude": 2.1829462,
+        "rating": 4.5,
+        "reviewCount": 86,
+        "editorSummary": "Descubre la magia del té de burbujas en Bubbolitas, situado en el encantador Sant Martí de Barcelona. Con un ambiente vibrante y opciones irresistibles para llevar o disfrutar en casa, somos la elección perfecta para los amantes del bubble tea. Experimenta nuestra amplia variedad de sabores que han conquistado a nuestros clientes. Visita nuestra web o llámanos al 936 94 04 09 y sumérgete en una experiencia de sabor única. ¡Te esperamos!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Bubbolitas---Bubble-Tea-Bar---Barcelona-Clot-Barcelona-Barcelona.jpg",
+        "imageAlt": "Bubbolitas - Bubble Tea Bar - Barcelona Clot en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "14:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:00",
+            "closesAt": "21:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 90
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/18ctea-gracia-barcelona-barcelona/"
+        ],
+        "name": "18CTEA GRÀCIA",
+        "slug": "18ctea-gracia",
+        "brandName": "18CTEA",
+        "isIndependent": false,
+        "address": "Gracia, Barcelona",
+        "postalCode": "08024",
+        "neighborhood": "Carrer de l'Escorial",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=18CTEA%20GR%C3%80CIA%20Gracia%2C%20Barcelona",
+        "latitude": 41.406645,
+        "longitude": 2.1618092,
+        "rating": 4.4,
+        "reviewCount": 39,
+        "editorSummary": "Descubre el paraíso del bubble tea en 18CTEA GRÀCIA , donde la tradición se une con la innovación en pleno corazón de Gràcia, Barcelona. Disfruta de una amplia variedad de sabores irresistibles en cada sorbo y experimenta un servicio de excelencia en un ambiente acogedor. Ya sea que prefieras llevártelo a casa o disfrutarlo en nuestro local, te garantizamos una experiencia única que querrás repetir. Ven y déjate seducir por la magia del mejor bubble tea en la ciudad.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/18CTEA-GRACIA-Barcelona-Barcelona.jpg",
+        "imageAlt": "18CTEA GRÀCIA en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:30",
+            "closesAt": "21:15",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 88
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/bubble-bliss-barcelona-barcelona/"
+        ],
+        "name": "BUBBLE BLISS",
+        "slug": "bubble-bliss",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Carrer d'Entença, 89, Eixample, 08015 Barcelona",
+        "postalCode": "08015",
+        "neighborhood": "Eixample",
+        "phone": "+34653564476",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BUBBLE%20BLISS%20Carrer%20d'Enten%C3%A7a%2C%2089%2C%20Eixample%2C%2008015%20Barcelona",
+        "latitude": 41.3797535,
+        "longitude": 2.1501744,
+        "rating": 5,
+        "reviewCount": 27,
+        "editorSummary": "BUBBLE BLISS es el destino soñado para todos los aficionados al bubble tea en Barcelona. Ubicados en Eixample, nuestros tés de burbujas con sabores únicos prometen deleitar tus sentidos. Con un ambiente cálido y una atención al cliente impecable, cada visita se convierte en una experiencia memorable. No solo puedes disfrutar de nuestras creaciones in situ, sino también pedirlas a domicilio para saborear la magia de BUBBLE BLISS desde la comodidad de tu hogar.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/BUBBLE-BLISS-Barcelona-Barcelona.jpg",
+        "imageAlt": "BUBBLE BLISS en Barcelona",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "16:00",
+            "closesAt": "20:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "20:30",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:00",
+            "closesAt": "19:30",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": true,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 100
+      }
+    ],
+    "vigo": [
+      {
+        "sourceUrls": [
+          "https://www.turismo.gal/recurso/-/detalle/250904000053/puki?ctre=40000240&tp=1001549",
+          "https://glovoapp.com/es/es/vigo/stores/puki-vigo",
+          "https://www.reserva-restaurante-menu.es/puki-vigo"
+        ],
+        "name": "Puki",
+        "slug": "puki-vialia",
+        "brandName": "Puki",
+        "isIndependent": true,
+        "address": "Praza Estación, 1, Local 116, 36201 Vigo, Pontevedra",
+        "postalCode": "36201",
+        "neighborhood": "Centro Comercial Vialia",
+        "phone": "+34696584738",
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Puki%20Praza%20Estaci%C3%B3n%201%20Local%20116%20Vigo",
+        "rating": null,
+        "reviewCount": null,
+        "editorSummary": "Local de Vialia Vigo con carta propia de bubble tea en formato mediano y grande, además de su propuesta de pastelería artesanal.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "/images/shops/puki-vigo.png",
+        "imageAlt": "Puki Bubble Tea en Vigo",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "12:00",
+            "closesAt": "18:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": true,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "latitude": 42.2353353,
+        "longitude": -8.7103625,
+        "googleScore": null
+      },
+      {
+        "sourceUrls": [
+          "https://www.xinxinteavigo.es/",
+          "https://www.paxinasgalegas.es/xinxin-tea-687200em.html",
+          "https://www.reserva-restaurante-menu.es/xinxin-tea-vigo"
+        ],
+        "name": "Xinxin Tea",
+        "slug": "xinxin-tea",
+        "brandName": "Xinxin Tea",
+        "isIndependent": true,
+        "address": "Rúa de García Barbón, 123, 36201 Vigo, Pontevedra",
+        "postalCode": "36201",
+        "neighborhood": "Fátima",
+        "phone": "+34886290922",
+        "websiteUrl": "https://www.xinxinteavigo.es/",
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Xinxin%20Tea%20R%C3%BAa%20de%20Garc%C3%ADa%20Barb%C3%B3n%20123%20Vigo",
+        "rating": 4.8,
+        "reviewCount": 60,
+        "editorSummary": "Restaurante asiático de García Barbón con carta propia de bubble tea, tés con leche, matcha y bebidas de fruta con tapioca y otros toppings.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://www.xinxinteavigo.es/public/upbanner/20230807150437955473.jpg",
+        "imageAlt": "Xinxin Tea en Vigo",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "11:00",
+            "closesAt": "23:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": true,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": true,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "latitude": 42.2381547,
+        "longitude": -8.7102802,
+        "googleScore": 96
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/burbujeate-vigo-pontevedra/"
+        ],
+        "name": "BURBUJEATE",
+        "slug": "burbujeate",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Rúa da Ronda de Don Bosco, 64, Santiago de Vigo, 36202 Vigo, Pontevedra",
+        "postalCode": "36202",
+        "neighborhood": "Santiago de Vigo",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BURBUJEATE%20R%C3%BAa%20da%20Ronda%20de%20Don%20Bosco%2C%2064%2C%20Santiago%20de%20Vigo%2C%2036202%20Vigo%2C%20Pontevedra",
+        "latitude": 42.2356465,
+        "longitude": -8.7206416,
+        "rating": 4.4,
+        "reviewCount": 517,
+        "editorSummary": "Descubre el lugar predilecto para los amantes del Bubble Tea en Vigo, donde cada sorbo es una delicia. En Burbujeate, la calidad y la atención personalizada transforman cada visita en una experiencia inolvidable. Ya sea para disfrutar allí o pedir a domicilio, encontrarás una amplia variedad de sabores y un ambiente acogedor que te encantará. ¡Sumérgete en la magia de Burbujeate y saborea el auténtico Bubble Tea!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/BURBUJEATE-Vigo-Pontevedra.jpg",
+        "imageAlt": "BURBUJEATE en Vigo",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "11:00",
+            "closesAt": "14:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "11:00",
+            "closesAt": "14:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "11:00",
+            "closesAt": "14:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "11:00",
+            "closesAt": "14:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "11:00",
+            "closesAt": "14:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "11:00",
+            "closesAt": "14:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": true,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": true
+        },
+        "status": "published",
+        "googleScore": 88
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/chachatea-vigo-pontevedra/"
+        ],
+        "name": "ChachaTea",
+        "slug": "chachatea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "Praza Estación, 1, Santiago de Vigo, 36201 Vigo, Pontevedra",
+        "postalCode": "36201",
+        "neighborhood": "Santiago de Vigo",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ChachaTea%20Praza%20Estaci%C3%B3n%2C%201%2C%20Santiago%20de%20Vigo%2C%2036201%20Vigo%2C%20Pontevedra",
+        "latitude": 42.2353353,
+        "longitude": -8.7103625,
+        "rating": 4.1,
+        "reviewCount": 26,
+        "editorSummary": "Descubre la magia de ChachaTea , donde la excelencia del té de burbujas cobra vida. Perfecto para los apasionados del bubble tea , nuestro local te ofrece creaciones únicas como el delicioso frappe de sandía con nube de queso . Visítanos para vivir una experiencia gastronómica inolvidable o disfruta de nuestras bebidas en casa con nuestro servicio a domicilio. Cada sorbo es una celebración de sabor que no querrás perderte.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/ChachaTea-Vigo-Pontevedra.jpg",
+        "imageAlt": "ChachaTea en Vigo",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "12:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": "13:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": true,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 82
+      },
+      {
+        "sourceUrls": [
+          "https://machitea.es/crazy-tea-vigo-pontevedra/"
+        ],
+        "name": "Crazy Tea",
+        "slug": "crazy-tea",
+        "brandName": null,
+        "isIndependent": true,
+        "address": "36202 Vigo, Pontevedra",
+        "postalCode": "36202",
+        "neighborhood": "Pontevedra",
+        "phone": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Crazy%20Tea%20Pontevedra%2C%2036202%20Vigo%2C%2036202%20Vigo",
+        "latitude": 42.2356548,
+        "longitude": -8.7206665,
+        "rating": 3.6,
+        "reviewCount": 7,
+        "editorSummary": "En Crazy Tea te ofrecemos una experiencia sensorial única con nuestro delicioso Bubble Tea , perfecto para saborear y disfrutar en cualquier momento. Nuestro menú, que incluye el aclamado Oolong con maracuyá , está diseñado para aquellos que buscan una experiencia refrescante y personalizada. ¡Haz tu pedido hoy mismo y descubre por qué somos el sitio preferido de los amantes del té en Vigo!",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": "https://machitea.es/imagenes/teterias/Crazy-Tea-Vigo-Pontevedra.jpg",
+        "imageAlt": "Crazy Tea en Vigo",
+        "hours": [
+          {
+            "weekday": "monday",
+            "opensAt": "16:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "tuesday",
+            "opensAt": "16:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "wednesday",
+            "opensAt": "16:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "thursday",
+            "opensAt": "16:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "friday",
+            "opensAt": "16:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "saturday",
+            "opensAt": "16:00",
+            "closesAt": "22:00",
+            "isClosed": false
+          },
+          {
+            "weekday": "sunday",
+            "opensAt": null,
+            "closesAt": null,
+            "isClosed": true
+          }
+        ],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "published",
+        "googleScore": 72
+      }
+    ]
+  },
+  "closedShops": {
+    "vigo": [
+      {
+        "sourceUrls": [
+          "https://www.paxinasgalegas.es/tea-talk-711961em.html",
+          "https://metropolitano.gal/enfoque/vigo-se-despide-de-uno-de-sus-espacios-gastronomicos-mas-trendy-del-centro/"
+        ],
+        "name": "Tea Talk - Bubble Tea & Coffee",
+        "slug": "tea-talk-vigo",
+        "brandName": "Tea Talk",
+        "isIndependent": false,
+        "address": "Rda. de Don Bosco, 64 Bajo, 36202 Vigo, Pontevedra",
+        "postalCode": "36202",
+        "neighborhood": "Areal - Vigo Centro",
+        "phone": null,
+        "websiteUrl": "https://teatalkvigo.es/",
+        "instagramUrl": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tea%20Talk%20Ronda%20de%20Don%20Bosco%2064%20Vigo",
+        "rating": null,
+        "reviewCount": null,
+        "editorSummary": "Antigua tetería especializada en bubble tea del centro de Vigo. Páxinas Galegas y prensa local la señalan como cerrada en 2025.",
+        "whyItStandsOut": null,
+        "recommendedOrder": null,
+        "averagePrice": null,
+        "priceMin": null,
+        "priceMax": null,
+        "imageUrl": null,
+        "imageAlt": null,
+        "hours": [],
+        "features": {
+          "veganOptions": false,
+          "lactoseFreeOptions": false,
+          "glutenFreeOptions": false,
+          "takeaway": false,
+          "seating": false,
+          "wifi": false,
+          "studyFriendly": false,
+          "photoFriendly": false,
+          "petFriendly": false,
+          "wheelchairAccessible": false
+        },
+        "status": "cerrado_definitivo"
+      }
+    ]
+  }
+}

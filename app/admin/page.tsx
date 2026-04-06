@@ -1,8 +1,10 @@
-import { createClient } from "@/lib/supabase/server";
+import Link from "next/link";
+import { count, eq } from "drizzle-orm";
 import { signOut } from "@/app/admin/login/actions";
+import Icon from "@/components/Icon";
 import { db } from "@/db";
 import { cities, shops } from "@/db/schema";
-import { eq, count } from "drizzle-orm";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function AdminPage() {
   const supabase = await createClient();
@@ -19,18 +21,17 @@ export default async function AdminPage() {
 
   return (
     <div className="min-h-screen bg-surface">
-      {/* Top bar */}
       <header className="bg-surface-container-lowest border-b border-surface-container-high px-8 py-4 flex justify-between items-center">
         <span className="font-serif italic text-xl text-on-background">
-          Bubble Tea España <span className="text-on-surface-variant text-sm not-italic font-sans">/ Admin</span>
+          Bubble Tea España{" "}
+          <span className="text-on-surface-variant text-sm not-italic font-sans">
+            / Admin
+          </span>
         </span>
         <div className="flex items-center gap-6">
           <span className="text-sm text-on-surface-variant">{user?.email}</span>
           <form action={signOut}>
-            <button
-              type="submit"
-              className="text-sm font-semibold text-tertiary hover:opacity-70 transition-opacity"
-            >
+            <button type="submit" className="btn btn-subtle btn-xs">
               Cerrar sesión
             </button>
           </form>
@@ -45,17 +46,13 @@ export default async function AdminPage() {
           Gestiona ciudades, locales y contenido SEO.
         </p>
 
-        {/* Stats */}
         <div className="grid grid-cols-3 gap-6 mb-12">
           {[
             { label: "Ciudades", value: cityCount.count },
             { label: "Locales totales", value: shopCount.count },
             { label: "Publicados", value: publishedCount.count },
           ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-surface-container-lowest rounded-xl p-6 editorial-shadow"
-            >
+            <div key={stat.label} className="card-elevated p-6">
               <p className="text-4xl font-serif font-bold text-on-background mb-1">
                 {stat.value}
               </p>
@@ -66,43 +63,32 @@ export default async function AdminPage() {
           ))}
         </div>
 
-        {/* Nav cards */}
         <div className="grid grid-cols-2 gap-6">
-          <a
-            href="/admin/cities"
-            className="group bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors"
-          >
-            <span
-              className="material-symbols-outlined text-3xl text-primary mb-4 block"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              location_city
-            </span>
+          <Link href="/admin/cities" className="group card-soft-hover p-8">
+            <Icon
+              name="location_city"
+              className="text-3xl text-primary mb-4 block"
+            />
             <h2 className="text-xl font-bold text-on-background mb-2 group-hover:text-primary transition-colors">
               Ciudades
             </h2>
             <p className="text-sm text-on-surface-variant">
               Añade, edita y publica ciudades. Gestiona SEO y coordenadas.
             </p>
-          </a>
+          </Link>
 
-          <a
-            href="/admin/shops"
-            className="group bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors"
-          >
-            <span
-              className="material-symbols-outlined text-3xl text-primary mb-4 block"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              storefront
-            </span>
+          <Link href="/admin/shops" className="group card-soft-hover p-8">
+            <Icon
+              name="storefront"
+              className="text-3xl text-primary mb-4 block"
+            />
             <h2 className="text-xl font-bold text-on-background mb-2 group-hover:text-primary transition-colors">
               Locales
             </h2>
             <p className="text-sm text-on-surface-variant">
               Gestiona fichas de locales, scores, horarios e imágenes.
             </p>
-          </a>
+          </Link>
         </div>
       </main>
     </div>
