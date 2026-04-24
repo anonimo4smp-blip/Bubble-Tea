@@ -4,7 +4,7 @@ import Icon from "@/components/Icon";
 import { useCompare } from "./CompareProvider";
 
 export default function CompareBar() {
-  const { selected, remove, clear, openDrawer } = useCompare();
+  const { selected, remove, clear, openDrawer, triggerRef } = useCompare();
 
   if (selected.length === 0) return null;
 
@@ -39,8 +39,10 @@ export default function CompareBar() {
             Limpiar
           </button>
           <button
+            ref={triggerRef}
             onClick={openDrawer}
             disabled={selected.length < 2}
+            data-flip-id="compare-modal"
             className="btn btn-primary btn-xs"
           >
             Comparar ({selected.length})

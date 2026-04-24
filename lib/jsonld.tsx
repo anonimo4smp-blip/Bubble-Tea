@@ -2,11 +2,17 @@ import { SITE_URL } from "./constants";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export function JsonLd({ data }: { data: Record<string, any> | Record<string, any>[] }) {
+  const items = Array.isArray(data) ? data : [data];
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
+    <>
+      {items.map((item, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+        />
+      ))}
+    </>
   );
 }
 

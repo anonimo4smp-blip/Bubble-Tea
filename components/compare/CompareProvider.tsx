@@ -4,8 +4,10 @@ import {
   createContext,
   useCallback,
   useContext,
+  useRef,
   useState,
   type ReactNode,
+  type RefObject,
 } from "react";
 
 export type ComparableShop = {
@@ -42,6 +44,7 @@ type CompareContextValue = {
   drawerOpen: boolean;
   openDrawer: () => void;
   closeDrawer: () => void;
+  triggerRef: RefObject<HTMLButtonElement | null>;
 };
 
 const MAX = 3;
@@ -51,6 +54,7 @@ const CompareContext = createContext<CompareContextValue | null>(null);
 export function CompareProvider({ children }: { children: ReactNode }) {
   const [selected, setSelected] = useState<ComparableShop[]>([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
 
   const toggle = useCallback((shop: ComparableShop) => {
     setSelected((prev) => {
@@ -80,7 +84,7 @@ export function CompareProvider({ children }: { children: ReactNode }) {
 
   return (
     <CompareContext.Provider
-      value={{ selected, toggle, remove, clear, isSelected, drawerOpen, openDrawer, closeDrawer }}
+      value={{ selected, toggle, remove, clear, isSelected, drawerOpen, openDrawer, closeDrawer, triggerRef }}
     >
       {children}
     </CompareContext.Provider>

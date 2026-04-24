@@ -1,10 +1,18 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+import { Flip } from "gsap/Flip";
+import { CustomEase } from "gsap/CustomEase";
 import Icon, { type IconName } from "@/components/Icon";
 import { useCompare, type ComparableShop } from "./CompareProvider";
+
+gsap.registerPlugin(Flip, CustomEase);
+
+const FLIP_EASE_PATH =
+  "M0,0 C0.305,0.206 0.116,0.567 0.3,0.8 0.394,0.921 0.491,1 1,1";
 
 const FEATURE_ROWS: { key: string; label: string; icon: IconName }[] = [
   { key: "veganOptions", label: "Vegano", icon: "eco" },
@@ -93,31 +101,84 @@ function CompareRow({
 }
 
 export default function CompareDrawer() {
-  const { selected, drawerOpen, closeDrawer, clear } = useCompare();
+  const { selected, drawerOpen, closeDrawer, clear, triggerRef } = useCompare();
+  const [visible, setVisible] = useState(false);
+  const drawerRef = useRef<HTMLDivElement>(null);
+  const pendingState = useRef<ReturnType<typeof Flip.getState> | null>(null);
 
+  // Auto-close if selected drops below 2 while open
   useEffect(() => {
-    if (drawerOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    if (drawerOpen && selected.length < 2) closeDrawer();
+  }, [selected.length, drawerOpen, closeDrawer]);
+
+  // Body overflow lock
+  useEffect(() => {
+    document.body.style.overflow = drawerOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [drawerOpen]);
 
-  if (!drawerOpen || selected.length < 2) return null;
+  // Open: capture trigger position, mount drawer
+  // Close: animate drawer back to trigger, then unmount
+  useEffect(() => {
+    if (drawerOpen) {
+      if (triggerRef.current) {
+        pendingState.current = Flip.getState(triggerRef.current);
+      }
+      setVisible(true);
+    } else if (visible) {
+      if (!drawerRef.current || !triggerRef.current) {
+        setVisible(false);
+        return;
+      }
+      const state = Flip.getState(triggerRef.current);
+      Flip.to(state, {
+        targets: drawerRef.current,
+        scale: true,
+        ease: CustomEase.create("compare-ease-close", FLIP_EASE_PATH),
+        toggleClass: "pretty-modal-closing",
+        duration: 0.7,
+        onComplete: () => {
+          drawerRef.current?.removeAttribute("style");
+          setVisible(false);
+        },
+      });
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [drawerOpen]);
+
+  // After drawer mounts, run open animation from captured trigger position
+  useEffect(() => {
+    if (!visible || !drawerRef.current || !pendingState.current) return;
+    Flip.from(pendingState.current, {
+      targets: drawerRef.current,
+      scale: true,
+      ease: CustomEase.create("compare-ease-open", FLIP_EASE_PATH),
+      toggleClass: "pretty-modal-opening",
+      duration: 0.7,
+    });
+    pendingState.current = null;
+  }, [visible]);
+
+  if (!visible) return null;
 
   const colCount = selected.length;
 
   return (
     <div className="fixed inset-0 z-[60] flex flex-col">
       <div
-        className="absolute inset-0 bg-on-surface/40 backdrop-blur-sm"
+        className={`absolute inset-0 bg-on-surface/40 backdrop-blur-sm transition-opacity duration-700 ${
+          drawerOpen ? "opacity-100" : "opacity-0"
+        }`}
         onClick={closeDrawer}
       />
 
-      <div className="animate-in slide-in-from-bottom relative mt-auto flex max-h-[90vh] flex-col overflow-hidden rounded-t-3xl bg-surface">
+      <div
+        ref={drawerRef}
+        data-flip-id="compare-modal"
+        className="relative mt-auto flex max-h-[90vh] flex-col overflow-hidden rounded-t-3xl bg-surface"
+      >
         <div className="flex items-center justify-between border-b border-surface-container px-6 py-5">
           <h2 className="text-xl font-serif text-on-background">Comparar locales</h2>
           <div className="flex items-center gap-3">
