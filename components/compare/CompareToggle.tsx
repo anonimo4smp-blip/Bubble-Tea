@@ -18,16 +18,17 @@ export default function CompareToggle({ shop }: Props) {
         e.stopPropagation();
         toggle(shop);
       }}
-      className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
+      className={`flex h-8 items-center justify-center gap-1.5 rounded-full px-3 text-xs font-bold shadow-sm transition-colors ${
         active
           ? "bg-primary text-on-primary"
-          : "glass-nav bg-surface/80 text-on-surface-variant hover:text-primary"
+          : "glass-nav bg-surface/90 text-on-surface-variant hover:text-primary"
       }`}
       aria-label={active ? `Quitar ${shop.name} de la comparación` : `Añadir ${shop.name} a la comparación`}
       aria-pressed={active}
       title={active ? "Quitar del comparador" : "Comparar"}
     >
       <Icon name="compare" className="text-sm" />
+      <span>{active ? "Añadido" : "Comparar"}</span>
     </button>
   );
 }
