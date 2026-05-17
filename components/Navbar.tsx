@@ -27,7 +27,6 @@ function getScrollProgress(): number {
 }
 
 function NavbarInner({ pathname }: { pathname: string }) {
-  const isHome = pathname === "/";
   const [progress, setProgress] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const previousPathname = useRef(pathname);
@@ -115,9 +114,9 @@ function NavbarInner({ pathname }: { pathname: string }) {
   };
 
   const navLinks = [
-    { href: isHome ? "#ciudades" : "/#ciudades", label: "Explorar ciudades" },
-    { href: isHome ? "#ranking" : "/#ranking", label: "Rankings" },
-    { href: isHome ? "#editorial" : "/#editorial", label: "Sobre nosotros" },
+    { href: "/ciudades", label: "Explorar ciudades" },
+    { href: "/madrid/mejores-bubble-tea", label: "Rankings" },
+    { href: "/bubble-tea-en-espana", label: "Sobre nosotros" },
   ];
 
   return (
@@ -148,7 +147,7 @@ function NavbarInner({ pathname }: { pathname: string }) {
             </div>
             <div className="flex items-center gap-2">
               <Link
-                href={isHome ? "#ranking" : "/#ranking"}
+                href="/madrid/mejores-bubble-tea"
                 className="btn btn-primary btn-xs shrink-0 hidden md:inline-flex"
               >
                 Ver ranking
@@ -182,7 +181,7 @@ function NavbarInner({ pathname }: { pathname: string }) {
               </Link>
             ))}
             <Link
-              href={isHome ? "#ranking" : "/#ranking"}
+              href="/madrid/mejores-bubble-tea"
               onClick={() => setMenuOpen(false)}
               className="btn btn-primary btn-sm text-center"
             >
