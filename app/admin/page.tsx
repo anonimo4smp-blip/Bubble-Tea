@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { count, eq } from "drizzle-orm";
-import { signOut } from "@/app/admin/login/actions";
+import { signOut } from "@/app/admin/actions";
 import Icon from "@/components/Icon";
 import { db } from "@/db";
 import { cities, shops } from "@/db/schema";

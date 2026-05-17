@@ -48,15 +48,9 @@ export async function GET(request: NextRequest) {
         ? "forbidden"
         : "missing_allowlist";
 
-      return NextResponse.redirect(
-        `${origin}/admin/login?error=${encodeURIComponent(
-          getAdminAuthErrorMessage(reason)
-        )}`
-      );
+      return NextResponse.redirect(`${origin}/admin`);
     }
   }
 
-  return NextResponse.redirect(
-    `${origin}/admin/login?error=El+enlace+no+es+valido+o+ha+expirado`
-  );
+  return NextResponse.redirect(`${origin}/admin`);
 }
